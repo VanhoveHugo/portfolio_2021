@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/tailwind.css">
+</head>
+<body class="leading-normal flex flex-row overflow-x-hidden tracking-normal text-gray-900 bg-yellow-50 font-sans">
+    <%- include ('includes/header') -%>
+    <main class="h-full w-full pb-14 bg-right">
+        <section class="pt-24 md:pt-48 mx-auto width-full flex flex-wrap flex-col md:flex-row items-center">
+            <!-- Grid -->
+            <div class="flex flex-wrap justify-center items-center with-full flex-col md:flex-row">
+                <% for(let i=0; i <= 5; i++) { %>
+                <article class="bg-white shadow-md rounded-lg overflow-hidden m-4">
+                    <div class="shadow-sm with-full p-0 flex justify-between px-2">
+                        <a href="https://www.mdav-ados.fr" target="_blank">www.mdav-ados.fr</a>
+                        <ul class="flex m-1">
+                            <li class="p-1 m-1 block h-px w-px bg-black rounded-full"></li>
+                            <li class="p-1 m-1 block h-px w-px bg-black rounded-full"></li>
+                            <li class="p-1 m-1 block h-px w-px bg-black rounded-full"></li>
+                        </ul>
+                    </div>
+                    <div class="max-w-xs">
+                        <img src="https://s1.1zoom.me/b5050/596/Evening_Forests_Mountains_Firewatch_Campo_Santo_549147_1920x1080.jpg" alt="">
+                    </div>
+                </article>
+                <% } %>
+            </div>
+        </section>
+    </main>        
+</body>
+</html>

@@ -1,23 +1,36 @@
-<aside class="flex flex-col fixed left-0 bottom-0 items-center bg-white text-gray-700 shadow w-full md:w-auto md:sticky md:top-0 md:max-w-min">
-    <ul class="flex flex-row w-full md:flex-col">
+<aside class="z-10 flex flex-col fixed left-0 bottom-0 items-center bg-white text-gray-700 w-full sm:sticky sm:top-0 sm:max-w-min max-h-screen">
+    <ul class="flex flex-row w-full sm:flex-col">
         <li class="hover:bg-gray-100 flex-grow flex-1 flex-shrink-0">
             <a 
                 href="."
-                class="h-16 px-6 flex flex justify-center items-center w-full
+                class="h-16 px-6 flex justify-center flex-col text-center md:justify-start md:flex-row items-center w-full
                 focus:text-orange-500">
                 <svg 
                     class="h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    viewBox="0 0 576 512"><path fill="<%= root == 'accueil' ? '#f39c12' : 'currentColor' %>" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+                    viewBox="0 0 576 512">
+                    <path fill="<%= root == 'accueil' ? '#f39c12' : 'currentColor' %>" 
+                        d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 
+                        16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 
+                        0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 
+                        0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 
+                        148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 
+                        182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 
+                        12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 
+                        12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 
+                        12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 
+                        12 0 0 0-1.7-16.93z"></path>
+                </svg>
+                <p class="hidden sm:flex md:ml-2">Accueil</p>
             </a>
         </li>
 
         <li class="hover:bg-gray-100 flex-grow flex-1 flex-shrink-0">
             <a
                 href="/projets"
-                class="h-16 px-6 flex flex justify-center items-center w-full
+                class="h-16 px-6 flex justify-center flex-col text-center md:justify-start md:flex-row items-center w-full
                 focus:text-orange-500">
                 <svg
                     class="h-5 w-5"
@@ -37,14 +50,14 @@
                         2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0
                         0-1.79 1.11z"></path>
                 </svg>
-
+                <p class="hidden sm:flex md:ml-2">Projets</p>
             </a>
         </li>
 
         <li class="hover:bg-gray-100 flex-grow flex-1 flex-shrink-0">
             <a
                 href="/parcours"
-                class="h-16 px-6 flex flex justify-center items-center w-full
+                class="h-16 px-6 flex justify-center flex-col text-center md:justify-start md:flex-row items-center w-full
                 focus:text-orange-500">
                 <svg
                     class="h-5 w-5"
@@ -60,14 +73,14 @@
                     <path
                         d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                 </svg>
-
+                <p class="hidden sm:flex md:ml-2">Parcours</p>
             </a>
         </li>
 
         <li class="hover:bg-gray-100 flex-grow flex-1 flex-shrink-0">
             <a
                 href="/connexion"
-                class="h-16 px-6 flex flex justify-center items-center w-full
+                class="h-16 px-6 flex justify-center flex-col text-center md:justify-start md:flex-row items-center w-full
                 focus:text-orange-500">
                 <svg 
                     class="h-5 w-5"
@@ -97,32 +110,8 @@
                         200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z">
                     </path>
                 </svg>
+                <p class="hidden sm:flex md:ml-2">Compte</p>
             </a>
         </li>
     </ul>
-
-    <% if(user) { %>
-        <div class="mt-auto h-16 flex items-center w-full">
-            <!-- Action Section -->
-            <button
-                class="h-16 w-10 mx-auto flex flex justify-center items-center
-                w-full focus:text-orange-500 hover:bg-red-200 focus:outline-none">
-                <svg
-                    class="h-5 w-5 text-red-700"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-                    <polyline points="16 17 21 12 16 7"></polyline>
-                    <line x1="21" y1="12" x2="9" y2="12"></line>
-                </svg>
-            </button>
-        </div>
-    <% } %>
 </aside>

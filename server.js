@@ -10,6 +10,6 @@ app.use(express.static('./public'))
 
 routes(app)
 
-app.listen(3000, () => {
-    console.log('port 3000 open');
+app.listen(80, () => {
+    console.log('site ouvert');
 })

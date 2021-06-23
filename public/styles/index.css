@@ -8322,6 +8322,7 @@ video {
   border-color: rgba(0, 0, 0, var(--tw-border-opacity));
 }
 
+
 .group:hover .group-hover\:border-white {
   --tw-border-opacity: 1;
   border-color: rgba(255, 255, 255, var(--tw-border-opacity));

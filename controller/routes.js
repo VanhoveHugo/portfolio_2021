@@ -1,45 +1,25 @@
 module.exports = (app) => {
     app.get('/', (req, res) => {
         res.render('index', {
-            user: req.user,
             root: 'accueil'
         })
     })
 
     app.get('/projets', (req, res) => {
-        res.render('building', {
-            user: req.user,
+        res.render('projets', {
             root: 'projets'
-
         })
     })
 
     app.get('/parcours', (req, res) => {
-        res.render('building', {
-            user: req.user,
+        res.render('about', {
             root: 'parcours'
-
         })
     })
 
-    app.get('/espace-membre', (req, res) => {
-        res.render('building', {
-            user: req.user,
-            root: 'espace-membre'
-        })
-    })
-
-    app.get('/connexion', (req, res) => {
-        res.render('building', {
-            user: req.user,
-            root: 'connexion'
-        })
-    })
-
-    app.get('/inscription', (req, res) => {
-        res.render('enscription', {
-            user: req.user,
-            root: 'inscription'
+    app.get('*', (req, res) => {
+        res.render('error', {
+            root: '404'
         })
     })
 }

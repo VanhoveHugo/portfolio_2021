@@ -1,15 +1,4 @@
-<div class="fixed top-0 left-0 z-5">
-    <x class="absolute top-0 left-0 h-screen w-px border-black bg-black block transform -translate-x-0.5"></x>
-    <y class="absolute top-0 left-0 w-screen h-px border-black bg-black block transform -translate-y-0.5"></y>
+<div class="hidden sm:flex fixed top-0 left-0 z-0">
+    <x class="absolute top-0 left-0 h-screen w-0 p-px bg-black block transform -translate-x-0.5"></x>
+    <y class="absolute top-0 left-0 w-screen h-0 p-px bg-black block transform -translate-y-0.5"></y>
 </div>
-
-<script>
-    const y = document.querySelector('y')
-    const x = document.querySelector('x')
-
-    window.addEventListener('mousemove', e => {
-        x.style.left = e.clientX+"px"
-        y.style.top = e.clientY+"px"
-        console.log(e);
-    })
-</script>

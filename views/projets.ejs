@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <%- include ('includes/head') -%>
+    <title><Hugo /></title>
+</head>
+<body class="leading-normal flex flex-row overflow-x-hidden tracking-normal text-gray-900 bg-yellow-50 font-sans" style="font-family: 'Source Sans Pro', sans-serif;">
+    <%- include ('includes/header') -%>
+    <%- include ('includes/cursor') -%>
+    <main class="h-full w-full pb-14 bg-right">
+        <section class="pt-24 md:pt-48 mx-auto width-full flex flex-wrap flex-col md:flex-row items-center">
+            <!-- Grid -->
+            <div class="flex flex-wrap justify-center items-center w-full flex-col md:flex-row">
+                <!-- Card -->
+                <article class="bg-white shadow-md rounded overflow-hidden m-4 z-10 shadow">
+                    <div class="with-full p-0 flex items-center justify-between px-2 z-20">
+                        <a href="https://www.mdav-ados.fr" class="font-bold text-xs m-1" target="_blank">www.mdav-ados.fr</a>
+                        <ul class="flex m-1">
+                            <li class="m-1 block bg-green-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                            <li class="m-1 block bg-yellow-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                            <li class="m-1 block bg-red-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                        </ul>
+                    </div>
+                    <div class="max-w-sm">
+                        <a href="/projets/mdav-ados">
+                            <img class="-z-50" src="/img/mdav.png" alt="">
+                        </a>
+                    </div>
+                </article>
+                <!-- Card -->
+                <article class="bg-white shadow-md rounded overflow-hidden m-4 z-10 shadow">
+                    <div class="with-full p-0 flex items-center justify-between px-2 z-20">
+                        <a href="https://www.mdav-ados.fr" class="font-bold text-xs m-1" target="_blank">www.polygon.fr</a>
+                        <ul class="flex m-1">
+                            <li class="m-1 block bg-green-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                            <li class="m-1 block bg-yellow-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                            <li class="m-1 block bg-red-500" style="width: 5px;height:5px;border-radius:50%"></li>
+                        </ul>
+                    </div>
+                    <div class="max-w-sm">
+                        <a href="/projets/mdav-ados">
+                            <img class="-z-50" src="/img/polygon.png" alt="">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>      
+    <script src="js/index.js"></script>  
+</body>
+</html>

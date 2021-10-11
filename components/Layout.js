@@ -8,7 +8,7 @@ export default function Layout({ children, path }) {
         <Header path={path} />
         {children}
         <footer className={styles.footer}>
-          Powered by <a href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoCode</a>
+          Powered by <a rel="noreferrer" href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoCode</a>
         </footer>
     </div>
   )

@@ -18,13 +18,15 @@ export default function Layout({ title, children }) {
                 <h2>{title}</h2>
             </motion.div>
             <Link href='../.'>
-                <motion.a
-                    initial={{opacity: 0}} 
-                    animate={{opacity: 1}} 
-                    transition={{delay: .5}}
-                    >
-                    <GrClose />
-                </motion.a>
+                <a>
+                    <motion.div
+                        initial={{opacity: 0}} 
+                        animate={{opacity: 1}} 
+                        transition={{delay: .5}}
+                        >
+                        <GrClose />
+                    </motion.div>
+                </a>
             </Link>
         </div>
     )

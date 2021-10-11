@@ -22,7 +22,7 @@ export default function Layout({ path }) {
                 <div className={styles.wrapper}>
                     <h1>Hugo Vanhove</h1>
                     <p>Développeur FullStack JS (Node, React, Next)</p>
-                    <p className={styles.status}>A la recherche d'un stage</p>
+                    <p className={styles.status}>A la recherche d&apos;un stage</p>
                 </div>
             </header>
             <aside className={styles.menu}>
@@ -41,10 +41,7 @@ export default function Layout({ path }) {
                         <a>
                             Contact
                         </a>
-                    </Link>
-                    
-                   
-                    
+                    </Link> 
                 </nav>
             </aside>
         </>

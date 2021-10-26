@@ -1,3 +1,4 @@
+'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -5,11 +6,6 @@ import styles from '../../styles/components.module.css'
 import Layout from '../../components/Layout'
 import Section from '../../components/SectionHeader'
 import Container from '../../components/SectionContainer'
-
-import image1 from '../../public/img/winw1.webp'
-import image2 from '../../public/img/winw2.webp'
-import image3 from '../../public/img/winw3.webp'
-import image4 from '../../public/img/winw4.webp'
 
 export default function Home() {
   return (
@@ -30,21 +26,21 @@ export default function Home() {
           </a>
           
           <div className={styles.img} >
-            <Image src={image1} layout="responsive" alt='Une image de mes travaux' />
+            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
           </div>
 
           <p className={styles.center}>Utilisation du LocalStorage pour stocker le thème noir/blanc.</p>
 
           <div className={styles.img} >
-            <Image src={image2} layout="responsive" alt='Une image de mes travaux' />
+            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
           </div>
           <p className={styles.center}>Système de recherche automatique et instantané.</p>
           <div className={styles.img} >
-            <Image src={image3} layout="responsive" alt='Une image de mes travaux' />
+            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
           </div>
           <p className={styles.center}>Fiche personnalisée via la base de données.</p>
           <div className={styles.img} >
-            <Image src={image4} layout="responsive" alt='Une image de mes travaux' />
+            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
           </div>
         </Container>
       </Layout>

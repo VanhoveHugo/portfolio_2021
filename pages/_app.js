@@ -1,3 +1,4 @@
+'use strict'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 
@@ -18,8 +19,8 @@ function MyApp({ Component, pageProps, router}) {
               type: 'website',
               locale: 'fr',
               url,
-              description: 'Le portfolio de Hugo Code, développeur JavaScript.',
-              site_name: 'Hugo Code | wallis.dev',
+              description: 'Le portfolio de Hugo Vanhove, développeur JavaScript.',
+              site_name: 'Hugo Vanhove | Développeur JavaScript Junior',
               images: [],
           }}
           canonical={url}

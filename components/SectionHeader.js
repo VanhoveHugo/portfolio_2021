@@ -17,7 +17,7 @@ export default function Layout({ title, children }) {
                 >
                 <h2>{title}</h2>
             </motion.div>
-            <Link href='../.'>
+            <Link href='/portfolio'>
                 <a>
                     <motion.div
                         initial={{opacity: 0}} 

@@ -1,21 +1,22 @@
+'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
 
 import Layout from '../../components/Layout'
-import SubHeader from '../../components/SectionHeader'
+import Section from '../../components/SectionHeader'
 import Container from '../../components/SectionContainer'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{"<Hugo /> N°3 Polygon Rôleplay"}</title>
+        <title>{"<Hugo /> N°2 Maison Des Ados Virtuelle"}</title>
       </Head>
 
       <Layout path="index">
-        <SubHeader title="Polygon RôlePlay">
-          <h3>Node.js, SQL, SteamAuth</h3>
-        </SubHeader>
+        <Section title="Maison Des Ados Virtuelle">
+          <h3>Node.js, MongoDB, Socket.io</h3>
+        </Section>
         <Container>
           <h3>Next.js, Google API</h3>
           <p>Le but était de me familiariser avec les Framework Next et React.</p>

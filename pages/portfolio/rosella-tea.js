@@ -1,3 +1,4 @@
+'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -9,12 +10,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{"<Hugo /> N°2 Maison Des Ados Virtuelle"}</title>
+        <title>{"<Hugo /> N°1 Rosella Tea"}</title>
       </Head>
 
       <Layout path="index">
-        <Section title="Maison Des Ados Virtuelle">
-          <h3>Node.js, MongoDB, Socket.io</h3>
+        <Section title="Rosella Tea">
+          <h3>HTML, SASS, JS</h3>
         </Section>
         <Container>
           <h3>Next.js, Google API</h3>

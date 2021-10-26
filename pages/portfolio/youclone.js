@@ -1,3 +1,4 @@
+'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -9,13 +10,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>{"<Hugo /> N°1 Rosella Tea"}</title>
+        <title>{"<Hugo /> N°5 YouClone"}</title>
       </Head>
 
       <Layout path="index">
-        <Section title="Rosella Tea">
-          <h3>HTML, SASS, JS</h3>
-        </Section>
+        <Section title="YouClone" />
         <Container>
           <h3>Next.js, Google API</h3>
           <p>Le but était de me familiariser avec les Framework Next et React.</p>

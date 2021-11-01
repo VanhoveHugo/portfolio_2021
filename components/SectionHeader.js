@@ -6,28 +6,22 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { GrClose } from 'react-icons/gr'
 import { motion } from 'framer-motion'
+import {BsFillGrid3X3GapFill} from 'react-icons/bs'
 
 export default function Layout({ title, children }) {
     return (
-        <div className={`${styles.section} ${styles.header}`}>
+        <div className={styles.sectionHeader}>
             <motion.div
-                initial={{x: -200, opacity: 0}} 
-                animate={{x: 0, opacity: 1}} 
-                transition={{ delay: 0 }}
+                initial={{opacity: 0}} 
+                animate={{opacity: 1}} 
                 >
-                <h2>{title}</h2>
+                <h1>{title}</h1>
+                <Link href='/portfolio'>
+                    <a>
+                        <BsFillGrid3X3GapFill /> Retour au projets
+                    </a>
+                </Link>
             </motion.div>
-            <Link href='/portfolio'>
-                <a>
-                    <motion.div
-                        initial={{opacity: 0}} 
-                        animate={{opacity: 1}} 
-                        transition={{delay: .5}}
-                        >
-                        <GrClose />
-                    </motion.div>
-                </a>
-            </Link>
         </div>
     )
 }

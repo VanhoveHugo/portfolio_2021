@@ -22,7 +22,7 @@
     width: .5rem;
   }
   &::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: url(../public/img/paper_text.png) repeat 50% 50% #f5f5f5; 
   }
   &::-webkit-scrollbar-thumb {
     background: rgba($primary, .9);
@@ -42,6 +42,7 @@
 .header {
   position:sticky;
   top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 2rem - 2rem);
@@ -51,7 +52,29 @@
   overflow: hidden;
   color: #000;
   z-index: 999;
-  @include below(1100px) {
+  &.headerMobile {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100vw - 4rem);
+    height: calc(100vh - 4rem);
+    z-index: 99;
+    div:first-child {
+      margin-bottom: 0;
+    }
+    nav {
+      flex: 0;
+      margin: .5rem 0;
+      a {
+        margin: .5rem auto;
+      }
+    }
+    
+  }
+  @include below(1000px) {
     width: 0;
     display: none;
   }
@@ -85,6 +108,53 @@
       }
     }
   }
+  ul {
+    display: flex;
+    a {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+      font-size: .75rem;
+      margin-right: .5rem;
+      width: 1rem;
+      height: 1rem;
+      line-height: 0;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background: $contrast;
+        z-index: -5;
+        transition: 200ms;
+      }
+      &:hover::before {
+        height: 100%;
+      }
+    }
+  }
+}
+.headerButton {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+  line-height: 0;
+  background: $primary;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+  @include above(1000px) {
+    display: none;
+  }
 }
 
 .row_container {
@@ -110,6 +180,7 @@
   }
   h3 {
     margin-bottom: .75rem;
+    font-weight: 500;
   }
 
   ul {
@@ -117,8 +188,11 @@
     flex: 1 0 25%;
     width: 100%;
     max-width: 25%;
+    min-width: 200px;
+    text-align: center;
     padding: 1rem;
     margin: .5rem;
+    line-height: 1rem;
     li {
       margin-bottom: .2rem;
       font-weight: 300;
@@ -126,7 +200,7 @@
         margin-bottom: 0;
       }
       a:hover {
-        color:$primary;
+        border-bottom: 5px solid $contrast;;
       }
     }
   }
@@ -158,6 +232,7 @@
 }
 
 .hero {
+  position: relative;
   height: calc(100vh - 4rem);
   width: 100%;
   max-width: 1200px;
@@ -172,15 +247,18 @@
     height: calc(100vh - 4rem);
     z-index: 5;
   }
-  @include below(1100px) {
+  @include below(1000px) {
     align-items: center;
   }
-  h1 {
+  strong {
     font-size: 3.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     z-index: 10;
+    border: none;
+    color: #000;
+    margin-bottom: 1rem;
     @include below(1000px) {
       flex-direction: column;
       font-size: 2.5rem;
@@ -189,17 +267,16 @@
       margin-left: 1rem;
     }
   }
-  strong {
+  h1 {
     position: relative;
     margin: .5rem;
-    padding-top: 1rem;
     z-index: 10;
     &::before {
       content: '';
       position: absolute;
-      bottom: 100%;
+      top: -.5rem;
       left: 0;
-      width: 7rem;
+      width: 80%;
       height: 5px;
       background: #000;
       @include below(1200px) {
@@ -219,24 +296,6 @@
     max-width: 700px;
     letter-spacing: 1px;
     margin-bottom: .5rem;
-    strong {
-      position: relative;
-      z-index: 10;
-      &:hover::before {
-        height: 100%;
-      }
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        background: $contrast;
-        z-index: -5;
-        transition: all 200ms;
-      }
-    }
     &:last-child {
       margin-bottom: 0;
     }
@@ -263,15 +322,15 @@
 }
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-size: .7rem;
   padding: 1rem 5rem;
 }
 
-
 .projet {
   width: 100%;
-  max-width: 25%;
+  max-width: 30%;
+  min-width: 200px;
   transition: 200ms;
   padding: 1rem;
   height: max-content;
@@ -286,6 +345,10 @@
       right: .5rem;
       opacity: 1;
     }
+  }
+  figure {
+    width: 100%;
+    border-radius: 8px;
   }
   img {
     width: 100%;
@@ -315,5 +378,213 @@
     font-size: .7rem;
     font-weight: 300;
     color: #4c4c4c;
+  }
+}
+.scroll {
+  position: absolute;
+  bottom: -.5rem;
+  width: 50px;
+  height: 100px;
+  @include below(1000px) {
+    display: none;
+  }
+  svg {
+    width: 100%;
+    aspect-ratio: 75/150;
+  }
+  p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    top: calc(25% + 1px);
+    left: -50%;
+    transform: rotate(90deg);
+    z-index: 0;
+    font-weight: bold;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $primary;
+    transform: translate(-50%, -50%);
+    animation: identifier 2s infinite;
+    z-index: 5;
+  }
+  @keyframes identifier {
+    from, to, 10%, 90% {
+      opacity: 0;
+    }
+    10% {
+      top: 25%;
+
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      top: 75%;
+    }
+  }
+}
+
+.sectionHeader, .sectionContainer {
+  width: calc(100% - 1rem);
+  margin: 0;
+  @include below(1000px) {
+    margin: auto;
+    flex-direction: column;
+    text-align: center;
+    .back {
+      display: none;
+    }
+  }
+}
+.sectionHeader {
+  padding: 2rem 0 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #4c4c4c;
+  h1, a {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    @include below(1000px) {
+      margin: auto;
+    }
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  a {
+    font-size: .8rem;
+    font-weight: bold;
+    svg {
+      margin-right: .5rem;
+      transition: 200ms;
+    }
+    &:hover > * {
+      color: $contrast;
+    }
+  }
+}
+.sectionContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  @include below(1000px) {
+    flex-direction: column;
+  }
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .img {
+    width: 100%;    
+    margin-bottom: 1rem !important;
+    img {
+      border: 1px solid #000 !important;
+    }
+  }
+  .text {
+    width: 100%;
+    max-width: 40%;
+    margin-left: 1rem;
+    @include below(1000px) {
+      max-width: none;
+      margin: auto;
+    }
+    h2 {
+      font-size: .825rem;
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    h3 {
+      font-size: .75rem;
+      font-weight: bold;
+      color: #4c4c4c;
+      margin-bottom: .5rem;
+    }
+    &>p {
+      font-size: .7rem;
+      color: #4c4c4c;
+      margin-bottom: .5rem;
+      line-height: 1rem;
+    }
+  }
+  .infos {
+    background: #fff;
+    padding: .5rem 1rem;
+    color: #4c4c4c;
+    font-size: .625rem;
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    @include below(1000px) {
+      width: max-content;
+      margin: 1rem auto;
+      text-align: left;
+    }
+    span {
+      display: inline-block;
+      font-weight: bold;
+      width: 5rem;
+      color: #000;
+    }
+    a {
+      display: inline-block;
+      margin-top: .5rem;
+    }
+  }
+  .button {
+    background: $primary;
+    padding: .5rem .5rem .25rem;
+    font-family: 'JenrivTitling';
+    font-size: .8rem;
+    margin: 1rem;
+  }
+}
+.flex_2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row !important;
+
+  & > * {
+    flex-basis: calc(50% - .5rem);
+    @include below(1000px) {
+      flex-basis: 100%;
+      margin-right: 0 !important;
+    }
+    &:nth-child(2n+1) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.extern_link {
+  position: relative;
+  z-index: 10;
+  &:hover::before {
+    height: 100%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: $contrast;
+    z-index: -5;
+    transition: all 200ms;
   }
 }

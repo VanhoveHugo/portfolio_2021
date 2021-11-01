@@ -8,77 +8,79 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import logo1 from '../../public/img/rosella-logo-1.jpg'
-import logo2 from '../../public/img/rosella-logo-2.jpg'
-import logo3 from '../../public/img/rosella-logo-3.jpg'
-import logo4 from '../../public/img/rosella-logo-4.jpg'
-import website from '../../public/img/rosella-website.jpg'
+import logo1 from '../../public/img/poudre-logo-1.jpg'
+import logo2 from '../../public/img/poudre-logo-2.jpg'
+import logo3 from '../../public/img/poudre-logo-3.jpg'
+import logo4 from '../../public/img/poudre-logo-4.jpg'
+import website from '../../public/img/poudre-website.jpg'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Hugo Vanhove | Rosella Tea</title>
-        <meta name="description" content="Le projet Rosella Tea réalisé par Hugo Vanhove. Un projet dans lequel vous retrouverez un logo ainsi qu'un site." />
+        <title>Hugo Vanhove | Poudre Blanche</title>
+        <meta name="description" content="Le projet Poudre Blanche réalisé par Hugo Vanhove. Un projet dans lequel vous retrouverez un logo ainsi qu'un site." />
       </Head>
       <Layout path="portfolio">
-        <SectionHeader title="Rosella Tea" />
+        <SectionHeader title="Poudre Blanche" />
         
         <SectionContainer>
           <div className={styles.text}>
             <h2>Logo</h2>
-            <p>Création d'un logo pour le salon de thé fictif Rosella Tea.</p>
+            <p>Création d'un logo pour le restaurant fictif Poudre Blanche.</p>
             <div className={styles.infos}>
-              <p><span>Date</span>27 oct. 2020</p>
+              <p><span>Date</span>11 déc. 2020</p>
               <p><span>Projet</span>Scolaire</p>
-              <p><span>Durée</span>3 jours</p>
-              <p><span>Logiciel</span>Illustrator, Photoshop</p>
+              <p><span>Durée</span>2 jours</p>
+              <p><span>Logiciel</span>Illustrator</p>
             </div>
             <h3>Concept</h3>
-            <p>Le pictogramme représente une feuille de thé qui pousse dans la tasse.</p>
+            <p>Le concept du logo est la combinaison des lettres P et B. Logo auquel on peut appliquer une rotation de -90 deg pour que cela forme une brioche.</p>
           </div>
           <div className={`${styles.imgs} ${styles.flex_2}`} >
-            <motion.div 
+          <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={logo1} layout="responsive" alt='Le logo Rosella Tea en noir et blanc' />
+              <Image src={logo1} layout="responsive" alt='Le logo Poudre Blanche en forme de P et B en noir.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .3}}
               className={styles.img} >
-              <Image src={logo2} layout="responsive" alt='Le logo Rosella Tea en couleur avec un fond blanc' />
+              <Image src={logo2} layout="responsive" alt='Le logo Poudre Blanche avec forme de brioche en noir.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .4}}
               className={styles.img} >
-              <Image src={logo3} layout="responsive" alt='Le logo Rosella Tea en couleur avec un fond bleu nuit' />
+              <Image src={logo3} layout="responsive" alt='Le logo Poudre Blanche en forme de P et B en jaune sur un fond vert.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .5}}
               className={styles.img} >
-              <Image src={logo4} layout="responsive" alt='Un mockup du logo Rosella Tea sur une carte de visite' />
+              <Image src={logo4} layout="responsive" alt='Le logo Poudre Blanche avec forme de brioche en jaune sur un fond vert.' />
             </motion.div>
           </div>
-
         </SectionContainer>
         <SectionContainer>
           <div className={styles.text}>
             <h2>Landing Page</h2>
-            <p>Création d'un site pour le salon de thé fictif Rosella Tea.</p>
+            <p>Création d'un site pour le restaurant fictif Poudre Blanche.</p>
             <div className={styles.infos}>
               <p><span>Date</span>18 déc. 2020</p>
               <p><span>Projet</span>Perso</p>
               <p><span>Durée</span>2 jours</p>
-              <p><span>Technologie</span>HTML, CSS, Javascript</p>
+              <p><span>Technologie</span>HTML, CSS, PHP, Javascript</p>
             </div>
+            <h3>Fonctionnalités</h3>
+            <p>- Système multilingue ( FR / EN )</p>
+            <p>- Carrousel avec des avis clients</p>
           </div>
           <div className={styles.imgs} >
             <motion.div 
@@ -89,7 +91,6 @@ export default function Home() {
               <Image src={website} layout="responsive" alt="Une image du site internet que j'ai réalisé pour mon projet Rosella Tea" />
             </motion.div>
           </div>
-          
         </SectionContainer>
       </Layout>
     </>

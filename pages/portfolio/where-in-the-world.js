@@ -1,48 +1,67 @@
 'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
-
 import styles from '../../styles/components.module.css'
+import { motion } from 'framer-motion'
+
 import Layout from '../../components/Layout'
-import Section from '../../components/SectionHeader'
-import Container from '../../components/SectionContainer'
+import SectionHeader from '../../components/SectionHeader'
+import SectionContainer from '../../components/SectionContainer'
+
+import website1 from '../../public/img/witw-website-1.jpg'
+import website2 from '../../public/img/witw-website-2.jpg'
+import website3 from '../../public/img/witw-website-3.jpg'
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>{"<Hugo /> N°4 Where In The World ?"}</title>
+        <title>Hugo Vanhove | Where In The World ?</title>
+        <meta name="description" content="Le projet Where In The World ? réalisé par Hugo Vanhove. Un projet dans lequel vous retrouverez un site." />
       </Head>
-
-      <Layout path="index">
-        <Section title="Where In The World ?">
-          <h3>Node.js, MongoDB, Socket.io</h3>
-        </Section>
-        <Container>
-          <p>Le but de crée ce site, était de comprendre les différentes functions tels que GetStaticProps... 
-          <br />Puis m&apos;améliorer avec React, notamment en utilisant plusieurs type de &quot;Hook&quot;.</p>
-          <a rel="noreferrer" href="https://github.com/VanhoveHugo/winw" target="_blank" className={styles.button}>
-            ≥ Github
-          </a>
-          
-          <div className={styles.img} >
-            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
+      <Layout path="portfolio">
+        <SectionHeader title="Where In The World ?" />        
+        <SectionContainer>
+          <div className={styles.text}>
+            <h3>Application web</h3>
+            <p>Création d'une application web pour découvrir NextJS.</p>
+            <div className={styles.infos}>
+              <p><span>Date</span>26 oct. 2021</p>
+              <p><span>Projet</span>Perso</p>
+              <p><span>Durée</span>1 semaine</p>
+              <p><span>Technologie</span>HTML, SASS, Javascript, Next.js</p>
+            </div>
+            <p>J'ai mis 1 semaine pour apprendre NextJS, les Hooks React et intégrer <a rel="noopener" href="https://restcountries.com/" target="_blank" className={styles.extern_link}>l'APi</a>.</p>
+            <br />
+            <h3>Fonctionnalités</h3>
+            <p>- Barre de recherche</p>
+            <p>- Système de filtre par continent</p>
+            <p>- Gestion du theme ( light / dark mode )</p>
           </div>
-
-          <p className={styles.center}>Utilisation du LocalStorage pour stocker le thème noir/blanc.</p>
-
-          <div className={styles.img} >
-            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
+          <div className={styles.imgs} >
+            <motion.div 
+              initial={{y: 400, opacity: 0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: .25,delay: .2}}
+              className={styles.img} >
+              <Image src={website1} layout="responsive" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème sombre." />
+            </motion.div>
+            <motion.div 
+              initial={{y: 400, opacity: 0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: .25,delay: .3}}
+              className={styles.img} >
+              <Image src={website2} layout="responsive" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème clair." />
+            </motion.div>
+            <motion.div 
+              initial={{y: 400, opacity: 0}}
+              animate={{y:0, opacity:1}}
+              transition={{duration: .25,delay: .4}}
+              className={styles.img} >
+              <Image src={website3} layout="responsive" alt="Une image de la page d'un des pays du site pour le projet Where In The World ? avec le theme clair" />
+            </motion.div>
           </div>
-          <p className={styles.center}>Système de recherche automatique et instantané.</p>
-          <div className={styles.img} >
-            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
-          </div>
-          <p className={styles.center}>Fiche personnalisée via la base de données.</p>
-          <div className={styles.img} >
-            {/* <Image src={'#'} layout="responsive" alt='Une image de mes travaux' /> */}
-          </div>
-        </Container>
+        </SectionContainer>
       </Layout>
     </>
   )

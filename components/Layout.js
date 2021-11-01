@@ -9,14 +9,12 @@ export default function Layout({ children, path }) {
         <Header path={path} />
         <motion.main 
           className={styles.main}
-          initial={{x: 200,opacity: 0}}
+          initial={{x: -200,opacity: 0}}
           animate={{x: 0,opacity: 1}}
-          exit={{x: -200,opacity: 0}}
           transition={{ duration: .25 }} >
           {children}
           <footer className={styles.footer}>
-            <p>© <a rel="noreferrer" href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoVanhove</a></p>
-            <p>Made in paris</p>
+            <p>Powered by <a className={styles.extern_link} rel="noopener" href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoVanhove</a></p>
           </footer>
         </motion.main>
     </div>

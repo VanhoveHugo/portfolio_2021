@@ -1,11 +1,11 @@
 'use strict'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/components.module.css'
 import Typewriter from 'typewriter-effect'
+
 import Layout from '../components/Layout'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
       <Head>
@@ -15,28 +15,38 @@ export default function Home() {
       <Layout path="index">
         <div className={styles.col_container}>
           <section className={styles.hero}>
-            <h1>Développeur 
+            <strong>Développeur 
               <Typewriter 
                 options={{
                   autoStart: true,
                   loop: true,
                   delay: 100,
                   strings: [
+                    'FullStuck Js',
                     'Node',
                     'Next',
                     'React'
                   ]
                 }}
               />
-            </h1>
-            <strong>Hugo Vanhove</strong>
+            </strong>
+            <h1>Hugo Vanhove</h1>
+            <div className={styles.scroll}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="101" viewBox="0 0 50 101">
+                <g id="Rectangle_17" data-name="Rectangle 17" fill="none" stroke="#000" stroke-width="2">
+                  <rect width="50" height="101" rx="25" stroke="none"/>
+                  <rect x="1" y="1" width="48" height="99" rx="24" fill="none"/>
+                </g>
+              </svg>
+              <p>scroll</p>
+            </div>
           </section>
           <section className={styles.about}>
             <h2>A propos</h2>
-            <p>Bonjour, je m'appelle <strong>Hugo Vanhove</strong> et je suis un jeune étudiant basé à Paris. J'aime créer de belles applications Web en Node, Next ou React.</p>
+            <p>Bonjour, je m'appelle <a rel='noopener' href="https://www.linkedin.com/in/hugo-code/" target='_blank' ><strong className={styles.extern_link}>Hugo Vanhove</strong></a> et je suis un jeune étudiant basé à Paris. J'aime créer de belles applications Web en Node, Next ou React.</p>
             <p>Actuellement à la recherche d'un stage dans le <strong>développement web</strong>.</p>
           </section>
-          <section className={styles.services}>
+          {/* <section className={styles.services}>
             <h2>Services</h2>
             <div className={styles.services_row}>
               <div>
@@ -55,7 +65,7 @@ export default function Home() {
           </section>
           <section className={styles.portfolio}>
             <h2>Dernier Projets</h2>
-          </section>
+          </section> */}
         </div>
       </Layout>
     </>

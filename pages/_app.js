@@ -11,27 +11,21 @@ function MyApp({ Component, pageProps, router}) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.ico" type="image/ico" />
       </Head>
       <DefaultSeo
-          titleTemplate="%s - James Wallis"
           openGraph={{
               type: 'website',
               locale: 'fr',
-              url,
-              description: 'Le portfolio de Hugo Vanhove, développeur JavaScript.',
-              site_name: 'Hugo Vanhove | Développeur JavaScript Junior',
-              images: [],
+              url: url,
           }}
-          canonical={url}
       />
       <AnimatePresence 
         exitBeforeEnter
         initial={false}
         onExitComplete={() => window.scrollTo(0, 0)}
         >
-        
-        <Component {...pageProps} canonical={url} key={url} />
+        <Component {...pageProps} />
       </AnimatePresence>
     </>
   )

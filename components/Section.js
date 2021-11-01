@@ -9,7 +9,7 @@ import { motion } from 'framer-motion'
 export default function Layout({ title, delay, desc, path, img }) {
     return (
         <motion.article
-            initial={{y: 200,opacity: 0}}
+            initial={{y: 250,opacity: 0}}
             animate={{y: 0,opacity: 1}}
             transition={{ duration: .25, delay: delay }}
             className={styles.projet} >

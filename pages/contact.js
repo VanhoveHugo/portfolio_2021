@@ -1,12 +1,10 @@
 'use strict'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/components.module.css'
 
 import Layout from '../components/Layout'
-import Section from '../components/Section'
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
@@ -15,7 +13,7 @@ export default function Home() {
       </Head>
       <Layout path="contact">
         <div className={styles.row_container}>
-          hgellop
+          Bientot...
         </div>
       </Layout>
     </>

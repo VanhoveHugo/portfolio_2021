@@ -177,6 +177,7 @@ body {
   font-family: "GontSerrat";
   background: #b33939;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 a {

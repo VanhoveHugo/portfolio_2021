@@ -5,18 +5,27 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+
 export default function Layout({ path }) {
-    const router = useRouter()
     useEffect(() => {
-        const buttons = document.querySelectorAll('.contain-link a')
-        buttons.forEach(button => {
-            button.addEventListener('mouseover', (e) => {
-                let target = e.target.href
-                e.preventDefault()
-                router.push(target)
-            })
+        let button = document.querySelector('#headerButton')
+        let header = document.querySelector('header')
+        button.addEventListener('click', () => {
+            header.classList.toggle(styles.headerMobile)
         })
+
+        let desktop = false
+        window.addEventListener('resize', (e) => {
+            if(window.innerWidth <= 1000 && desktop === true) return !desktop
+            if(window.innerWidth >= 1000) {
+                desktop = true
+                if(header.classList.contains(styles.headerMobile)) 
+                return header.classList.remove(styles.headerMobile)
+            }
+        });
     }, [])
+
     return (
         <>
             <header className={styles.header}>
@@ -36,10 +45,22 @@ export default function Layout({ path }) {
                         <a className={path == "contact" ? styles.active : ''}>Contact</a>
                     </Link>
                 </nav>
-                <div>
-                    media
-                </div>
+                <ul>
+                    <li>
+                        <a rel='noopener' target="_blank" href="https://www.linkedin.com/in/hugo-code/">
+                            <FaLinkedinIn />
+                        </a>
+                    </li>
+                    <li>
+                        <a rel='noopener' target="_blank" href="https://github.com/VanhoveHugo">
+                            <FaGithub />
+                        </a>
+                    </li>
+                </ul>
             </header>
+            <button id="headerButton" className={styles.headerButton}>
+                <GiHamburgerMenu />
+            </button>
         </>
     )
 }

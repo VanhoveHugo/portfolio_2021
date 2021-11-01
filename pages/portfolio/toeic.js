@@ -23,7 +23,7 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Mailing</h2>
-            <p>Création d'un mailing pour la certification TOEIC.</p>
+            <p>Création d&apos;un mailing pour la certification TOEIC.</p>
             <div className={styles.infos}>
               <p><span>Date</span>30 sept. 2020</p>
               <p><span>Projet</span>Scolaire</p>

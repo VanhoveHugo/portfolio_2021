@@ -22,19 +22,19 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Application Web</h2>
-            <p>Création de la maquette et du développement de l'application web pour le serveur PolygonRP sur le jeu Garry's Mod.</p>
+            <p>Création de la maquette et du développement de l&apos;application web pour le serveur PolygonRP sur le jeu Garry&apos;s Mod.</p>
             <div className={styles.infos}>
               <p><span>Date</span>6 avr. 2021</p>
               <p><span>Projet</span>Perso</p>
               <p><span>Durée</span>1 semaine</p>
               <p><span>Technologie</span>HTML, SASS, Javascript, Node.js</p>
             </div>
-            <p>Toute l'équipe ayant arrête le développement du serveur, j'ai donc cessé le projet.</p>
+            <p>Toute l&apos;équipe ayant arrête le développement du serveur, j&apos;ai donc cessé le projet.</p>
             <br />
             <h3>Fonctionnalités</h3>
             <p>- Espace Administration</p>
             <p>- Connexion entre le site et le jeu</p>
-            <p>- Système d'inscription / connexion</p>
+            <p>- Système d&apos;inscription / connexion</p>
             <p>- Forum</p>
             <br />
             <h3>Librairies</h3>

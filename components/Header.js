@@ -47,12 +47,12 @@ export default function Layout({ path }) {
                 </nav>
                 <ul>
                     <li>
-                        <a rel='noopener' target="_blank" href="https://www.linkedin.com/in/hugo-code/">
+                        <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">
                             <FaLinkedinIn />
                         </a>
                     </li>
                     <li>
-                        <a rel='noopener' target="_blank" href="https://github.com/VanhoveHugo">
+                        <a rel="noreferrer noopener" target="_blank" href="https://github.com/VanhoveHugo">
                             <FaGithub />
                         </a>
                     </li>

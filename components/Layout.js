@@ -14,7 +14,7 @@ export default function Layout({ children, path }) {
           transition={{ duration: .25 }} >
           {children}
           <footer className={styles.footer}>
-            <p>Powered by <a className={styles.extern_link} rel="noopener" href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoVanhove</a></p>
+            <p>Powered by <a className={styles.extern_link} rel="noreferrer noopener" href="https://www.linkedin.com/in/hugo-code/" target="_blank">HugoVanhove</a></p>
           </footer>
         </motion.main>
     </div>

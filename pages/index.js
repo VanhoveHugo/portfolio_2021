@@ -33,7 +33,7 @@ export default function Index() {
             <h1>Hugo Vanhove</h1>
             <div className={styles.scroll}>
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="101" viewBox="0 0 50 101">
-                <g id="Rectangle_17" data-name="Rectangle 17" fill="none" stroke="#000" stroke-width="2">
+                <g id="Rectangle_17" data-name="Rectangle 17" fill="none" stroke="#000" strokeWidth="2">
                   <rect width="50" height="101" rx="25" stroke="none"/>
                   <rect x="1" y="1" width="48" height="99" rx="24" fill="none"/>
                 </g>
@@ -43,8 +43,8 @@ export default function Index() {
           </section>
           <section className={styles.about}>
             <h2>A propos</h2>
-            <p>Bonjour, je m'appelle <a rel='noopener' href="https://www.linkedin.com/in/hugo-code/" target='_blank' ><strong className={styles.extern_link}>Hugo Vanhove</strong></a> et je suis un jeune étudiant basé à Paris. J'aime créer de belles applications Web en Node, Next ou React.</p>
-            <p>Actuellement à la recherche d'un stage dans le <strong>développement web</strong>.</p>
+            <p>Bonjour, je m&apos;appelle <a rel='noreferrer noopener' href="https://www.linkedin.com/in/hugo-code/" target='_blank' ><strong className={styles.extern_link}>Hugo Vanhove</strong></a> et je suis un jeune étudiant basé à Paris. J&apos;aime créer de belles applications Web en Node, Next ou React.</p>
+            <p>Actuellement à la recherche d&apos;un stage dans le <strong>développement web</strong>.</p>
           </section>
           {/* <section className={styles.services}>
             <h2>Services</h2>

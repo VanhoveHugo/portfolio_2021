@@ -24,17 +24,17 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Application Web</h2>
-            <p>Création d'une application web pour l'association Maison Des Ados Virtuelle.</p>
+            <p>Création d&apos;une application web pour l&apos;association Maison Des Ados Virtuelle.</p>
             <div className={styles.infos}>
               <p><span>Date</span>6 avr. 2021</p>
               <p><span>Projet</span>Stage</p>
               <p><span>Durée</span>2 mois</p>
               <p><span>Technologie</span>HTML, SASS, Javascript, Node.js</p>
-              <a rel="noopener" href="https://mdav.herokuapp.com/" target="_blank" className={styles.extern_link}>Voir le site</a>
+              <a rel="noreferrer noopener" href="https://mdav.herokuapp.com/" target="_blank" className={styles.extern_link}>Voir le site</a>
             </div>
             <h3>Fonctionnalités</h3>
             <p>- Espace Administration</p>
-            <p>- Système d'inscription / connexion</p>
+            <p>- Système d&apos;inscription / connexion</p>
             <p>- Gestion de planning personnalisé</p>
             <p>- Réservation de rendez-vous</p>
             <p>- Blogging</p>
@@ -61,13 +61,13 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Espace Administration</h2>
-            <p>Création de l'application avec les langages : HTML, SASS et Node</p>
+            <p>Création de l&apos;application avec les langages : HTML, SASS et Node</p>
             <br />
             <h3>Modifications</h3>
             <p>- Rôles des utilisateurs</p>
-            <p>- Les Partenaires ( qui sont afficher sur la page d'accueil )</p>
+            <p>- Les Partenaires ( qui sont afficher sur la page d&apos;accueil )</p>
             <p>- Gestion des candidatures pour le staff</p>
-            <p>- Rédaction d'article avec un <a rel="noopener" href="https://alex-d.github.io/Trumbowyg/" target="_blank" className={styles.extern_link}>WYSIWYG</a></p>
+            <p>- Rédaction d&apos;article avec un <a rel="noreferrer noopener" href="https://alex-d.github.io/Trumbowyg/" target="_blank" className={styles.extern_link}>WYSIWYG</a></p>
             <p>- Blogging</p>
           </div>
           <div className={styles.imgs} >

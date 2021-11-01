@@ -27,7 +27,7 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Logo</h2>
-            <p>Création d'un logo pour le salon de thé fictif Rosella Tea.</p>
+            <p>Création d&apos;un logo pour le salon de thé fictif Rosella Tea.</p>
             <div className={styles.infos}>
               <p><span>Date</span>27 oct. 2020</p>
               <p><span>Projet</span>Scolaire</p>
@@ -72,7 +72,7 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h2>Landing Page</h2>
-            <p>Création d'un site pour le salon de thé fictif Rosella Tea.</p>
+            <p>Création d&apos;un site pour le salon de thé fictif Rosella Tea.</p>
             <div className={styles.infos}>
               <p><span>Date</span>18 déc. 2020</p>
               <p><span>Projet</span>Perso</p>

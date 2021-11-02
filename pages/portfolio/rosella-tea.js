@@ -8,11 +8,11 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import logo1 from '../../public/img/rosella-logo-1.jpg'
-import logo2 from '../../public/img/rosella-logo-2.jpg'
-import logo3 from '../../public/img/rosella-logo-3.jpg'
-import logo4 from '../../public/img/rosella-logo-4.jpg'
-import website from '../../public/img/rosella-website.jpg'
+import logo1 from '../../public/img/rosella-logo-1.webp'
+import logo2 from '../../public/img/rosella-logo-2.webp'
+import logo3 from '../../public/img/rosella-logo-3.webp'
+import logo4 from '../../public/img/rosella-logo-4.webp'
+import website from '../../public/img/rosella-website.webp'
 
 export default function Home() {
   return (

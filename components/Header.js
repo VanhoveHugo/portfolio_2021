@@ -1,10 +1,10 @@
 'use strict'
-import styles from '../styles/components.module.css'
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import styles from '../styles/components.module.css'
+import { motion } from 'framer-motion'
 
+import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 
 export default function Layout({ path }) {

@@ -1,11 +1,8 @@
 'use strict'
-import styles from '../styles/components.module.css'
 import Link from 'next/link'
-
-import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-import { GrClose } from 'react-icons/gr'
+import styles from '../styles/components.module.css'
 import { motion } from 'framer-motion'
+
 import {BsFillGrid3X3GapFill} from 'react-icons/bs'
 
 export default function Layout({ title, children }) {

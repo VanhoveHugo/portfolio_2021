@@ -1,6 +1,6 @@
 'use strict'
-import styles from '../styles/components.module.css'
 import Header from './Header'
+import styles from '../styles/components.module.css'
 import { motion } from 'framer-motion'
 
 export default function Layout({ children, path }) {

@@ -8,9 +8,9 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import website1 from '../../public/img/mdav-website-1.jpg'
-import website2 from '../../public/img/mdav-website-2.jpg'
-import website3 from '../../public/img/mdav-website-3.jpg'
+import website1 from '../../public/img/mdav-website-1.webp'
+import website2 from '../../public/img/mdav-website-2.webp'
+import website3 from '../../public/img/mdav-website-3.webp'
 
 export default function Home() {
   return (

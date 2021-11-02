@@ -51,11 +51,8 @@ table {
 /**
  * GontSerrat + JenrivTitling
  * Bold
- * Bold Italic
  * Regular
- * Regular Italic
  * Light
- * Light Italic
  */
 /**
  * GontSerrat
@@ -67,13 +64,6 @@ table {
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'GontSerrat';
-  src: url("../public/fonts/Gontserrat-BoldItalic.woff") format("woff"), url("../public/fonts/Gontserrat-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-}
-
 /* -- GontSerrat Regular -- */
 @font-face {
   font-family: 'GontSerrat';
@@ -81,25 +71,11 @@ table {
   font-weight: 500;
 }
 
-@font-face {
-  font-family: 'GontSerrat';
-  src: url("../public/fonts/Gontserrat-RegularItalic.woff") format("woff"), url("../public/fonts/Gontserrat-RegularItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-}
-
 /* -- GontSerrat Light -- */
 @font-face {
   font-family: 'GontSerrat';
   src: url("../public/fonts/Gontserrat-Light.woff") format("woff"), url("../public/fonts/Gontserrat-Light.woff2") format("woff2");
   font-weight: 300;
-}
-
-@font-face {
-  font-family: 'GontSerrat';
-  src: url("../public/fonts/Gontserrat-LightItalic.woff") format("woff"), url("../public/fonts/Gontserrat-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
 }
 
 /**
@@ -112,13 +88,6 @@ table {
   font-weight: 700;
 }
 
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-BoldItalic.woff") format("woff"), url("../public/fonts/JenrivTitling-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-}
-
 /* -- JenrivTitling Regular -- */
 @font-face {
   font-family: 'JenrivTitling';
@@ -126,25 +95,11 @@ table {
   font-weight: 500;
 }
 
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-RegularItalic.woff") format("woff"), url("../public/fonts/JenrivTitling-RegularItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-}
-
 /* -- JenrivTitling Light -- */
 @font-face {
   font-family: 'JenrivTitling';
   src: url("../public/fonts/JenrivTitling-Light.woff") format("woff"), url("../public/fonts/JenrivTitling-Light.woff2") format("woff2");
   font-weight: 300;
-}
-
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-LightItalic.woff") format("woff"), url("../public/fonts/JenrivTitling-LightItalic.woff2") format("woff2");
-  font-weight: 300;
-  font-style: italic;
 }
 
 html {

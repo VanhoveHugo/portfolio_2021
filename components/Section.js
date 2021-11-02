@@ -1,9 +1,7 @@
 'use strict'
-import styles from '../styles/components.module.css'
-import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect } from 'react'
+import styles from '../styles/components.module.css'
 import { motion } from 'framer-motion'
 
 export default function Layout({ title, delay, desc, path, img }) {

@@ -8,7 +8,7 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import mailing from '../../public/img/toeic-mailing.png'
+import mailing from '../../public/img/toeic-mailing.webp'
 
 export default function Home() {
   return (

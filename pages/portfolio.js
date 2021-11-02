@@ -5,13 +5,13 @@ import styles from '../styles/components.module.css'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
 
-import youclone from '../public/img/youclone.png'
-import witw from '../public/img/witw.png'
-import polygon from '../public/img/polygon.png'
-import toeic from '../public/img/toeic.png'
-import rosella from '../public/img/rosella.png'
-import mdav from '../public/img/mdav.png'
-import poudre from '../public/img/poudre.png'
+// import youclone from '../public/img/youclone.webp'
+import witw from '../public/img/witw.webp'
+import polygon from '../public/img/polygon.webp'
+import toeic from '../public/img/toeic.webp'
+import rosella from '../public/img/rosella.webp'
+import mdav from '../public/img/mdav.webp'
+import poudre from '../public/img/poudre.webp'
 
 export default function Portfolio() {
   return (

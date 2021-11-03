@@ -1,6 +1,6 @@
 {
-    "name": "Hugo Vanhove | Portfolio",
-    "short_name": "Portfolio",
+    "name": "Hugo Vanhove | Développeur JavaScript Junior",
+    "short_name": "Hugo Vanhove | Portfolio",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#b33939",
@@ -8,10 +8,9 @@
     "orientation": "portrait-primary",
     "icons": [
       {
-        "src": "/favicon.icos",
+        "src": "/favicon.ico",
         "type": "image/png",
         "sizes": "72x72"
       }
-
     ]
   }

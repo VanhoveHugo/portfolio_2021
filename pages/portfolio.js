@@ -18,7 +18,7 @@ export default function Portfolio() {
     <>
       <Head>
         <title>Hugo Vanhove | Portfolio</title>
-        <meta name="description" content="Les projets de Hugo Vanhove, développeur web JavaScript spécialisé Node et Next avec une aspiration pour le développment FullStack. Basé à Paris." />
+        <meta name="description" content="La page projets du portfolio de Hugo Vanhove." />
       </Head>
 
       <Layout path="portfolio">

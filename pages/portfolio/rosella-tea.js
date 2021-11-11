@@ -8,12 +8,6 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import logo1 from '../../public/img/rosella-logo-1.webp'
-import logo2 from '../../public/img/rosella-logo-2.webp'
-import logo3 from '../../public/img/rosella-logo-3.webp'
-import logo4 from '../../public/img/rosella-logo-4.webp'
-import website from '../../public/img/rosella-website.webp'
-
 export default function Home() {
   return (
     <>
@@ -43,28 +37,28 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={logo1} layout="responsive" alt='Le logo Rosella Tea en noir et blanc' />
+              <img src="/img/rosella-logo-1.webp" alt='Le logo Rosella Tea en noir et blanc' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .3}}
               className={styles.img} >
-              <Image src={logo2} layout="responsive" alt='Le logo Rosella Tea en couleur avec un fond blanc' />
+              <img src="/img/rosella-logo-2.webp" alt='Le logo Rosella Tea en couleur avec un fond blanc' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .4}}
               className={styles.img} >
-              <Image src={logo3} layout="responsive" alt='Le logo Rosella Tea en couleur avec un fond bleu nuit' />
+              <img src="/img/rosella-logo-3.webp" alt='Le logo Rosella Tea en couleur avec un fond bleu nuit' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .5}}
               className={styles.img} >
-              <Image src={logo4} layout="responsive" alt='Un mockup du logo Rosella Tea sur une carte de visite' />
+              <img src="/img/rosella-logo-4.webp" alt='Un mockup du logo Rosella Tea sur une carte de visite' />
             </motion.div>
           </div>
 
@@ -86,7 +80,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .6}}
               className={styles.img} >
-              <Image src={website} layout="responsive" alt="Une image du site internet que j'ai réalisé pour mon projet Rosella Tea" />
+              <img src="/img/rosella-website.webp" alt="Une image du site internet que j'ai réalisé pour mon projet Rosella Tea" />
             </motion.div>
           </div>
           

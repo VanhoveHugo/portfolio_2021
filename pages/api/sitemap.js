@@ -12,13 +12,10 @@ export default async (req, res) => {
     { url: "/portfolio/maison-des-ados-virtuelle", changefreq: "monthly", priority: 0.4 },
     { url: "/portfolio/polygon", changefreq: "monthly", priority: 0.4 },
     { url: "/portfolio/where-in-the-world", changefreq: "monthly", priority: 0.4 },
-    { url: "/portfolio/youclone", changefreq: "monthly", priority: 0.4 },
-
-    { url: "/contact", changefreq: "never", priority: 0.2 },
   ];
 
   // Create a stream to write to
-  const stream = new SitemapStream({ hostname: `https://${req.headers.host}` });
+  const stream = new SitemapStream({ hostname: `https://www.hugov.fr/` });
 
   res.writeHead(200, {
     "Content-Type": "application/xml",

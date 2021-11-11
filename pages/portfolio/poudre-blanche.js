@@ -8,12 +8,6 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import logo1 from '../../public/img/poudre-logo-1.webp'
-import logo2 from '../../public/img/poudre-logo-2.webp'
-import logo3 from '../../public/img/poudre-logo-3.webp'
-import logo4 from '../../public/img/poudre-logo-4.webp'
-import website from '../../public/img/poudre-website.webp'
-
 export default function Home() {
   return (
     <>
@@ -43,28 +37,28 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={logo1} layout="responsive" alt='Le logo Poudre Blanche en forme de P et B en noir.' />
+              <img src="/img/poudre-logo-1.webp" alt='Le logo Poudre Blanche en forme de P et B en noir.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .3}}
               className={styles.img} >
-              <Image src={logo2} layout="responsive" alt='Le logo Poudre Blanche avec forme de brioche en noir.' />
+              <img src="/img/poudre-logo-2.webp" alt='Le logo Poudre Blanche avec forme de brioche en noir.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .4}}
               className={styles.img} >
-              <Image src={logo3} layout="responsive" alt='Le logo Poudre Blanche en forme de P et B en jaune sur un fond vert.' />
+              <img src="/img/poudre-logo-3.webp" alt='Le logo Poudre Blanche en forme de P et B en jaune sur un fond vert.' />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .5}}
               className={styles.img} >
-              <Image src={logo4} layout="responsive" alt='Le logo Poudre Blanche avec forme de brioche en jaune sur un fond vert.' />
+              <img src="/img/poudre-logo-4.webp" alt='Le logo Poudre Blanche avec forme de brioche en jaune sur un fond vert.' />
             </motion.div>
           </div>
         </SectionContainer>
@@ -88,7 +82,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .6}}
               className={styles.img} >
-              <Image src={website} layout="responsive" alt="Une image du site internet que j'ai réalisé pour mon projet Rosella Tea" />
+              <img src="/img/poudre-website.webp" alt="Une image du site internet que j'ai réalisé pour mon projet Rosella Tea" />
             </motion.div>
           </div>
         </SectionContainer>

@@ -4,10 +4,8 @@ import styles from '../styles/components.module.css'
 import Typewriter from 'typewriter-effect'
 
 import Layout from '../components/Layout'
-import { BiMailSend } from 'react-icons/bi'
-import { BsFillMenuAppFill } from "react-icons/bs"
-import { CgWebsite } from "react-icons/cg"
 
+import { IoDesktopOutline, IoCodeSlashOutline, IoFolderOpenOutline, IoCompassOutline, IoHelpBuoyOutline, IoRocketOutline, IoChevronDownOutline } from 'react-icons/io5'
 
 export default function Index() {
   return (
@@ -41,39 +39,56 @@ export default function Index() {
                   <rect x="1" y="1" width="48" height="99" rx="24" fill="none"/>
                 </g>
               </svg>
-              <p>scroll</p>
+              <IoChevronDownOutline className={styles.scrollAnim} />
             </div>
           </section>
           <section className={styles.about}>
-            <h2>A propos</h2>
+            <h2>Présentation</h2>
             <p>Actuellement étudiant à <a rel='noreferrer noopener' className={styles.extern_link} href="https://www.mydigitalschool.com/" target='_blank' >MyDigitalSchool</a> Paris, je suis passioné par le développement informatique.
             </p>
             <p>Je suis un <strong>Développeur FullStack</strong> Javascript Junior.</p>
             <p>J&apos;apprends tous les jours de bonnes pratiques ou de nouvelles methodes pour mieux coder.</p>
             <p>Je maitrise les languages de programmations: <strong>HTML, CSS, BASH, GIT, SQL, Python, Javascript, NodeJS, NextJS et ReactJS.</strong></p>
-          </section>
-          
-          
-          {/* Mon site avant mettre les images en webp : 6.13Mo
-          Apres : 2.06Mo */}
-          
+          </section>         
           <section className={styles.services}>
             <h2>Services</h2>
             <div className={styles.services_row}>
               <div>
-                <CgWebsite />
-                <h3>Landing Page</h3>
+                <IoDesktopOutline />
+                <h3>cross-plateforme</h3>
+                <p>Compatible avec tous les supports web.</p>
               </div>
               <div>
-                <BsFillMenuAppFill />
-                <h3>Application Web</h3>
+                <IoCodeSlashOutline />
+                <h3>développement web</h3>
+                <p>Création de site sur-mesure repondant aux besoins des clients</p>
               </div>
               <div>
-                <BiMailSend />
-                <h3>Mailing</h3>
+                <IoFolderOpenOutline />
+                <h3>Projets web</h3>
+                <p>Landing page, site vitrine, application web.</p>
+              </div>
+              <div>
+                <IoCompassOutline />
+                <h3>Référencement</h3>
+                <p>Code optimiser pour le référencement naturel</p>
+              </div>
+              <div>
+                <IoHelpBuoyOutline />
+                <h3>Accompagnement</h3>
+                <p>Je gère entièrement les projets en assurant une communication constante</p>
+              </div>
+              <div>
+                <IoRocketOutline />
+                <h3>Maintenance web</h3>
+                <p>Gestion d'hébérgement, garanti d'accessibilité, intégration régulière des mises à jour de sécurité</p>
               </div>
             </div>
           </section>
+          {/* <section className={styles.contact}>
+            <h2>Contact</h2>
+            <p>Démarrons un projet ensemble, n'hésitez pas à me contacter sur <a rel='noreferrer noopener' className={styles.extern_link} href="https://www.linkedin.com/in/hugo-code/" target='_blank' >LinkedIn</a></p>
+          </section> */}
         </div>
       </Layout>
     </>

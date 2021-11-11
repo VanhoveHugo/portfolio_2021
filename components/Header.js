@@ -4,8 +4,7 @@ import { useEffect } from 'react'
 import styles from '../styles/components.module.css'
 import { motion } from 'framer-motion'
 
-import { GiHamburgerMenu } from 'react-icons/gi'
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { IoMenu, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
 
 export default function Layout({ path }) {
     useEffect(() => {
@@ -41,25 +40,22 @@ export default function Layout({ path }) {
                     <Link href="/portfolio">
                         <a className={path == "portfolio" ? styles.active : ''}>Portfolio</a>
                     </Link>
-                    <Link href="/contact">
-                        <a className={path == "contact" ? styles.active : ''}>Contact</a>
-                    </Link>
                 </nav>
                 <ul>
                     <li>
                         <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">
-                            <FaLinkedinIn />
+                            <IoLogoLinkedin />
                         </a>
                     </li>
                     <li>
                         <a rel="noreferrer noopener" target="_blank" href="https://github.com/VanhoveHugo">
-                            <FaGithub />
+                            <IoLogoGithub />
                         </a>
                     </li>
                 </ul>
             </header>
             <button id="headerButton" className={styles.headerButton}>
-                <GiHamburgerMenu />
+                <IoMenu />
             </button>
         </>
     )

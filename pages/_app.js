@@ -22,7 +22,7 @@ vanhovehugo1@gmail.com
     
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" type="image/ico" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
       <DefaultSeo
           openGraph={{

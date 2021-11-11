@@ -44,21 +44,21 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={website1} layout="responsive" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème sombre." />
+              <img src="/img/witw-website-1.webp" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème sombre." />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .3}}
               className={styles.img} >
-              <Image src={website2} layout="responsive" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème clair." />
+              <img src="/img/witw-website-2.webp" alt="Une image de la page d'accueil du site pour le projet 'Where In The World ?' avec le thème clair." />
             </motion.div>
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .4}}
               className={styles.img} >
-              <Image src={website3} layout="responsive" alt="Une image de la page d'un des pays du site pour le projet Where In The World ? avec le theme clair" />
+              <img src="/img/witw-website-3.webp" alt="Une image de la page d'un des pays du site pour le projet Where In The World ? avec le theme clair" />
             </motion.div>
           </div>
         </SectionContainer>

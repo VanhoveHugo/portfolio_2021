@@ -49,13 +49,10 @@ table {
 }
 
 /**
- * GontSerrat + JenrivTitling
+ * GontSerrat
  * Bold
  * Regular
  * Light
- */
-/**
- * GontSerrat
  */
 /* -- GontSerrat Bold -- */
 @font-face {
@@ -75,30 +72,6 @@ table {
 @font-face {
   font-family: 'GontSerrat';
   src: url("../public/fonts/Gontserrat-Light.woff") format("woff"), url("../public/fonts/Gontserrat-Light.woff2") format("woff2");
-  font-weight: 300;
-}
-
-/**
- * JenrivTitling
- */
-/* -- JenrivTitling Bold -- */
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-Bold.woff") format("woff"), url("../public/fonts/JenrivTitling-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-
-/* -- JenrivTitling Regular -- */
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-Regular.woff") format("woff"), url("../public/fonts/JenrivTitling-Regular.woff2") format("woff2");
-  font-weight: 500;
-}
-
-/* -- JenrivTitling Light -- */
-@font-face {
-  font-family: 'JenrivTitling';
-  src: url("../public/fonts/JenrivTitling-Light.woff") format("woff"), url("../public/fonts/JenrivTitling-Light.woff2") format("woff2");
   font-weight: 300;
 }
 
@@ -131,7 +104,7 @@ body {
   margin: 0;
   font-family: "GontSerrat";
   background: #b33939;
-  color: #000;
+  color: #111;
   scroll-behavior: smooth;
 }
 

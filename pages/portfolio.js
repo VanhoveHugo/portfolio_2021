@@ -5,14 +5,6 @@ import styles from '../styles/components.module.css'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
 
-// import youclone from '../public/img/youclone.webp'
-import witw from '../public/img/witw.webp'
-import polygon from '../public/img/polygon.webp'
-import toeic from '../public/img/toeic.webp'
-import rosella from '../public/img/rosella.webp'
-import mdav from '../public/img/mdav.webp'
-import poudre from '../public/img/poudre.webp'
-
 export default function Portfolio() {
   return (
     <>
@@ -35,37 +27,37 @@ export default function Portfolio() {
             desc="Intégration d'une API Rest" 
             path="where-in-the-world" 
             delay=".2"
-            img={witw} />
+            img="/img/witw.webp" />
           <Section 
             title="Polygon" 
             desc="Forum pour un jeu" 
             path="polygon" 
             delay=".3"
-            img={polygon} />
+            img="/img/polygon.webp" />
           <Section 
             title="MDAV" 
             desc="Prise de rendez-vous" 
             path="maison-des-ados-virtuelle" 
             delay=".4"
-            img={mdav} />
+            img="/img/mdav.webp" />
           <Section 
             title="Poudre Blanche" 
             desc="Logo et une landing page" 
             path="poudre-blanche" 
             delay=".5"
-            img={poudre} />
+            img="/img/poudre.webp" />
           <Section 
             title="Rosella tea" 
             desc="Logo et une landing page" 
             path="rosella-tea" 
             delay=".6"
-            img={rosella} />
+            img="/img/rosella.webp" />
           <Section 
             title="TOEIC" 
             desc="Mailing" 
             path="toeic" 
             delay=".7"
-            img={toeic} />
+            img="/img/toeic.webp" />
           
           <h2>Autres projets</h2>
           <ul>

@@ -14,7 +14,7 @@ export default function Layout({ title, delay, desc, path, img }) {
             <Link href={`/portfolio/${path}`}>
                 <a>
                     <figure>
-                        <Image src={img} alt={`Une image de mon projet ${title.toLowerCase()}`} layout="responsive" />
+                        <img src={img} alt={`Une image de mon projet ${title.toLowerCase()}`} />
                         <figcaption>Voir plus</figcaption>
                     </figure>
                     <h1>{title}</h1>

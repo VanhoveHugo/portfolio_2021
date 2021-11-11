@@ -8,8 +8,6 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import mailing from '../../public/img/toeic-mailing.webp'
-
 export default function Home() {
   return (
     <>
@@ -37,7 +35,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={mailing} layout="responsive" alt="Une image du mailing que j'ai réalisé pendant ma formation MyDigialSchool" />
+              <img src="/img/toeic-mailing.webp" alt="Une image du mailing que j'ai réalisé pendant ma formation MyDigialSchool" />
             </motion.div>
           </div>
         </SectionContainer>

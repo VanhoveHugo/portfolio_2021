@@ -8,10 +8,6 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import website1 from '../../public/img/mdav-website-1.webp'
-import website2 from '../../public/img/mdav-website-2.webp'
-import website3 from '../../public/img/mdav-website-3.webp'
-
 export default function Home() {
   return (
     <>
@@ -54,7 +50,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={website1} layout="responsive" alt="Une image du site internet que j'ai réalisé pour mon stage avec l'association Maison Des Ados Virtuelle" />
+              <img src="/img/mdav-website-1.webp" alt="Une image du site internet que j'ai réalisé pour mon stage avec l'association Maison Des Ados Virtuelle" />
             </motion.div>
           </div>
         </SectionContainer>
@@ -72,10 +68,10 @@ export default function Home() {
           </div>
           <div className={styles.imgs} >
             <div className={styles.img} >
-                <Image src={website2} layout="responsive" alt="Une image de l'espace administrateur que j'ai réalisé pour le site de l'association Maison Des Ados Virtuelle" />
+                <img src="/img/mdav-website-2.webp" layout="responsive" alt="Une image de l'espace administrateur que j'ai réalisé pour le site de l'association Maison Des Ados Virtuelle" />
             </div>
             <div className={styles.img} >
-                <Image src={website3} layout="responsive" alt="Une image de l'espace blogging que j'ai réalisé pour le site de l'association Maison Des Ados Virtuelle" />
+                <img src="/img/mdav-website-3.webp" layout="responsive" alt="Une image de l'espace blogging que j'ai réalisé pour le site de l'association Maison Des Ados Virtuelle" />
             </div>
           </div>
         </SectionContainer>

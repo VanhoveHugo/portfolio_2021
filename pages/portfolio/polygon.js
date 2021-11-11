@@ -49,7 +49,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <Image src={website} layout="responsive" alt="Une image du site internet que j'ai réalisé pour le projet PolygonRp" />
+              <img src="/img/polygon-website.webp" alt="Une image du site internet que j'ai réalisé pour le projet PolygonRp" />
             </motion.div>
         </SectionContainer>
       </Layout>

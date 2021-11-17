@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 import {BsFillGrid3X3GapFill} from 'react-icons/bs'
 
-export default function Layout({ title, children }) {
+export default function Layout({ title }) {
     return (
         <div className={styles.sectionHeader}>
             <motion.div

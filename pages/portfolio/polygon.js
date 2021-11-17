@@ -8,8 +8,6 @@ import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import website from '../../public/img/polygon-website.webp'
-
 export default function Home() {
   return (
     <>

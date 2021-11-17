@@ -31,7 +31,7 @@ export default function Home() {
             <h3>Concept</h3>
             <p>Le pictogramme représente une feuille de thé qui pousse dans la tasse.</p>
           </div>
-          <div className={`${styles.imgs} ${styles.flex_2}`} >
+          <div className={`${styles.imgs} ${styles.flex2}`} >
             <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}

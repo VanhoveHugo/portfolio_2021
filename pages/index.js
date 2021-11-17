@@ -12,10 +12,10 @@ export default function Index() {
     <>
       <Head>
         <title>Hugo Vanhove | Développeur JavaScript Junior</title>
-        <meta name="description" content="Hugo Vanhove, développeur web Javascript spécialisé Next et Node avec une aspiration pour la cyber sécurité." />
+        <meta name="description" content="Portfolio de Hugo Vanhove, développeur web Javascript spécialisé Next et Node avec une aspiration pour la cyber sécurité." />
       </Head>
       <Layout path="index">
-        <div className={styles.col_container}>
+        <div className={styles.container}>
           <section className={styles.hero}>
             <strong>Développeur 
               <Typewriter 
@@ -44,7 +44,7 @@ export default function Index() {
           </section>
           <section className={styles.about}>
             <h2>Présentation</h2>
-            <p>Actuellement étudiant à <a rel='noreferrer noopener' className={styles.extern_link} href="https://www.mydigitalschool.com/" target='_blank' >MyDigitalSchool</a> Paris, je suis passioné par le développement informatique.
+            <p>Actuellement étudiant à <a rel='noreferrer noopener' href="https://www.mydigitalschool.com/" target='_blank' >MyDigitalSchool</a> Paris, je suis passioné par le développement.
             </p>
             <p>Je suis un <strong>Développeur FullStack</strong> Javascript Junior.</p>
             <p>J&apos;apprends tous les jours de bonnes pratiques ou de nouvelles methodes pour mieux coder.</p>
@@ -52,7 +52,7 @@ export default function Index() {
           </section>         
           <section className={styles.services}>
             <h2>Services</h2>
-            <div className={styles.services_row}>
+            <div className={styles.flex3}>
               <div>
                 <IoDesktopOutline />
                 <h3>cross-plateforme</h3>
@@ -81,13 +81,13 @@ export default function Index() {
               <div>
                 <IoRocketOutline />
                 <h3>Maintenance web</h3>
-                <p>Gestion d'hébérgement, garanti d'accessibilité, intégration régulière des mises à jour de sécurité</p>
+                <p>Gestion d'hébérgement, garanti d'accessibilité, mises à jour de sécurité</p>
               </div>
             </div>
           </section>
           {/* <section className={styles.contact}>
             <h2>Contact</h2>
-            <p>Démarrons un projet ensemble, n'hésitez pas à me contacter sur <a rel='noreferrer noopener' className={styles.extern_link} href="https://www.linkedin.com/in/hugo-code/" target='_blank' >LinkedIn</a></p>
+            <p>Démarrons un projet ensemble, n'hésitez pas à me contacter sur <a rel='noreferrer noopener' href="https://www.linkedin.com/in/hugo-code/" target='_blank' >LinkedIn</a></p>
           </section> */}
         </div>
       </Layout>

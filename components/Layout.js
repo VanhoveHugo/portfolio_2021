@@ -14,8 +14,8 @@ export default function Layout({ children, path }) {
           transition={{ duration: .25 }} >
           {children}
           <footer className={styles.footer}>
-            <p>© 2021 <a rel="noreferrer noopener" className={styles.extern_link} target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a>, Tous droits réservés.</p>
-            <p>Made with <a rel="noreferrer noopener" className={styles.extern_link} target="_blank" href="https://nextjs.org/">Next.js</a></p>
+            <p>© 2021 <a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a>, Tous droits réservés.</p>
+            <p>Made with <a rel="noreferrer noopener" target="_blank" href="https://nextjs.org/">Next.js</a></p>
           </footer>
         </motion.main>
     </div>

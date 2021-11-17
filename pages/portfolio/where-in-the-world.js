@@ -31,7 +31,7 @@ export default function Home() {
               <p><span>Durée</span>1 semaine</p>
               <p><span>Technologie</span>HTML, SASS, Javascript, Next.js</p>
             </div>
-            <p>J&apos;ai mis 1 semaine pour apprendre NextJS, les Hooks React et intégrer <a rel="noreferrer noopener" href="https://restcountries.com/" target="_blank" className={styles.extern_link}>l&apos;APi</a>.</p>
+            <p>J&apos;ai mis 1 semaine pour apprendre NextJS, les Hooks React et intégrer <a rel="noreferrer noopener" href="https://restcountries.com/" target="_blank">l&apos;APi</a>.</p>
             <br />
             <h3>Fonctionnalités</h3>
             <p>- Barre de recherche</p>

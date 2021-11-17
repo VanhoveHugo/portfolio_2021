@@ -7,7 +7,7 @@ import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps, router}) {
-  const url = `https://http://localhost:3000${router.route}`
+  const url = `https://www.hugov.fr${router.route}`
 
   useEffect(() => {
     console.log(
@@ -22,7 +22,7 @@ vanhovehugo1@gmail.com
     
     <>
       <Head>
-        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Head>
       <DefaultSeo
           openGraph={{

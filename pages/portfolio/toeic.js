@@ -1,7 +1,6 @@
 'use strict'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/components.module.css'
+import styles from '../../styles/projets.module.css'
 import { motion } from 'framer-motion'
 
 import Layout from '../../components/Layout'

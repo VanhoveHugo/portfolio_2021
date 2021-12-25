@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'fonts';
-@import 'var';
+@import 'theme';
 
 html {
     font-size: 16px;
@@ -24,8 +24,8 @@ body {
     padding: 1rem;
     margin: 0;
     font-family: "GontSerrat";
-    background: $dark_primary;
-    color: #111;
+    background: $gradient;
+    color: $black;
     scroll-behavior: smooth;
 }
 

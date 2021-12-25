@@ -1,5 +1,5 @@
 'use strict'
-import styles from '../styles/components.module.css'
+import styles from '../styles/projets.module.css'
 
 export default function Layout({ children }) {
     return (

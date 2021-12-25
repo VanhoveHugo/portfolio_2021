@@ -1,7 +1,6 @@
 'use strict'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/components.module.css'
+import styles from '../../styles/projets.module.css'
 import { motion } from 'framer-motion'
 
 import Layout from '../../components/Layout'
@@ -42,6 +41,7 @@ export default function Home() {
             <h3>Base de données</h3>
             <p>- MariaDB</p>
           </div>
+          <div className={styles.imgs}>
           <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}
@@ -49,6 +49,7 @@ export default function Home() {
               className={styles.img} >
               <img src="/img/polygon-website.webp" alt="Une image du site internet que j'ai réalisé pour le projet PolygonRp" />
             </motion.div>
+          </div>
         </SectionContainer>
       </Layout>
     </>

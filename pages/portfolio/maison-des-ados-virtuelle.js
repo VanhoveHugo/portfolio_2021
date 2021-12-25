@@ -1,7 +1,7 @@
 'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../../styles/components.module.css'
+import styles from '../../styles/projets.module.css'
 import { motion } from 'framer-motion'
 
 import Layout from '../../components/Layout'
@@ -26,7 +26,7 @@ export default function Home() {
               <p><span>Projet</span>Stage</p>
               <p><span>Durée</span>2 mois</p>
               <p><span>Technologie</span>HTML, SASS, Javascript, Node.js</p>
-              <a rel="noreferrer noopener" href="https://mdav.herokuapp.com/" target="_blank">Voir le site</a>
+              <a rel="noreferrer noopener" href="https://mdav.herokuapp.com/" target="_blank" className={styles.cta}>Voir le site</a>
             </div>
             <h3>Fonctionnalités</h3>
             <p>- Espace Administration</p>
@@ -63,7 +63,7 @@ export default function Home() {
             <p>- Rôles des utilisateurs</p>
             <p>- Les Partenaires ( qui sont afficher sur la page d&apos;accueil )</p>
             <p>- Gestion des candidatures pour le staff</p>
-            <p>- Rédaction d&apos;article avec un <a rel="noreferrer noopener" href="https://alex-d.github.io/Trumbowyg/" target="_blank">WYSIWYG</a></p>
+            <p>- Rédaction d&apos;article avec un <a rel="noreferrer noopener" href="https://alex-d.github.io/Trumbowyg/" target="_blank" className={styles.extern_link}>WYSIWYG</a></p>
             <p>- Blogging</p>
           </div>
           <div className={styles.imgs} >

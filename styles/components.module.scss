@@ -1,66 +1,8 @@
-@import 'var';
+@import 'theme';
 
 @mixin below($size) {
   @media screen and (max-width: $size) {
     @content
-  }
-}
-@mixin above($size) {
-  @media screen and (min-width: $size) {
-    @content
-  }
-}
-@mixin column() {
-  display: flex;
-  flex-direction: column;
-}
-@mixin flex($number) {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  div {
-    width: calc(#{$number} - 4rem - 2rem); // size - padding - margin
-    padding: 2rem;
-    @include below(1200px) {
-      width: calc(#{$number} - 2rem - 2rem); // size - padding - margin
-      padding: 1rem;
-    }
-  }
-  article {
-    width: calc(#{$number} - 2rem - 2rem); // size - padding - margin
-    padding: 1rem;
-  }
-  .img {
-    width: calc(#{$number} - .5rem);
-    margin: 0;
-    padding: 0;
-    background: none !important;
-    &:nth-child(2n+1) {
-      margin-bottom: 1rem;
-      margin-right: 1rem;
-    }
-    img {
-      width: 100%;
-      border-radius: 2px;
-      border: 1px solid #111;
-    }
-  }
-  div, article {
-    margin: 1rem;
-    background: #fff;
-    color: #4c4c4c;
-    transition: color 200ms;
-    &:hover {
-      color: #111;
-    }
-    @include below(1000px) {
-      width: calc(50% - 4rem - 2rem)
-    }
-    @include below(500px) {
-      width: calc(100% - 2rem - 2rem);
-    }
   }
 }
 
@@ -72,41 +14,80 @@
   overflow-x: hidden;
   overflow-y: scroll;
   display: flex;
+  border-radius: 8px;
   &::-webkit-scrollbar {
-    width: .5rem;
+    width: .25rem;
   }
   &::-webkit-scrollbar-track {
     background: url(../public/img/paper_text.webp) repeat 50% 50% #f5f5f5; 
+    border-radius: 0 8px 8px 0;
   }
   &::-webkit-scrollbar-thumb {
-    background: rgba($primary, .9);
+    background: rgba($black, .9);
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: rgba($primary, 1);
+    background: rgba($black, 1);
   }
-  a[href*="//"]:not([href*="hugov.fr"]) {
-    text-decoration: underline;
+  &::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-radius: 0 0 8px 0;
+    height: 8px;
+    background: rgba($black, .9);
   }
+  &::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-radius: 0 8px 0 0;
+    height: 8px;
+    background: rgba($black, .9);
+  }
+
+
 }
 .main {
   width: 100%;
-  @include column();
-  &>div {
-    flex: 1;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  section {
+    margin-top: 2rem;
+    h2 {
+      color: $blue;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
   }
 }
+
+
+.footer {
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid rgba($black, .25);
+  border-bottom: 0;
+  background: #fff;
+  font-size: .6rem;
+  padding: 1rem .5rem;
+  text-align: center;
+  @include above(1000px) {
+    text-align: left;
+  }
+}
+// Uncheck
+
 .header {
   position:sticky;
   top: 0;
   left: 0;
-  @include column();
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 2rem - 2rem);
   background: url(../public/img/paper_text.webp) repeat 50% 50% #f5f5f5; 
   width: 12rem;
   padding: 1rem;
   overflow: hidden;
-  color: #111;
-  z-index: 999;
+  color: $black;
+  z-index: 0;
   &.headerMobile {
     position: fixed;
     display: flex;
@@ -114,9 +95,10 @@
     justify-content: center;
     top: 1rem;
     left: 1rem;
+    border-radius: 8px;
     width: calc(100vw - 4rem);
     height: calc(100vh - 4rem);
-    z-index: 99;
+    z-index: 100;
     div:first-child {
       margin-bottom: 0;
     }
@@ -138,7 +120,8 @@
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
-    background: $primary;
+    background: $blue;
+    border-radius: 8px;
     width: max-content;
     padding: .5rem 1rem;
     cursor: pointer;
@@ -158,7 +141,7 @@
         text-decoration: underline;
       }
       &.active {
-        color: $dark_primary;
+        color: $blue;
       }
     }
   }
@@ -167,16 +150,23 @@
     a {
       position: relative;
       display: flex;
-      justify-content: center;
       align-items: center;
-      color: #111;
+      color: $black;
       font-size: .9rem;
       margin-right: .5rem;
       width: 1rem;
       height: 1rem;
+      overflow: hidden;
       line-height: 0;
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+      span {
+        width: 0;
+      }
       &:hover {
-        color: $primary;
+        color: $blue !important;
       }
     }
   }
@@ -190,7 +180,9 @@
   padding: .5rem;
   font-size: 1.5rem;
   line-height: 0;
-  background: $primary;
+  background: $light;
+  color: $black;
+  border-radius: 0 6px 0 0;
   border: none;
   cursor: pointer;
   z-index: 99;
@@ -198,165 +190,17 @@
     display: none;
   }
 }
-.hero_pages {
-  text-align: left;
-  margin: 2rem 1rem 1rem;
-  h1 {
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: .5rem;
-  }
-  p:first-of-type {
-    margin-bottom: .25rem;
-  }
-}
-.container {
-  position: relative;
-  @include column();
-  text-align: center;
-  h2 {
-    position: relative;
-    margin: 1rem 0 1.5rem;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center
-  }
-  .hero {
-    position: relative;
-    @include column();
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: calc(100vh - 4rem);
-    width: 100%;
-    max-width: 1200px;
-    @include below(1000px) {
-      align-items: center;
-    }
-    strong {
-      font-size: 3rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      @include below(1000px) {
-        flex-direction: column;
-        font-size: 2.5rem;
-        margin-bottom: .5rem;
-      }
-      div {
-        margin-left: 1rem;
-      }
-    }
-    h1 {
-      position: relative;
-      z-index: 10;
-      @include above(1000px) {
-        margin-left: .25rem;
-      }
-    }
-  }
 
-  .services {
-    padding: 1rem 0;
-    svg {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-  }
-}
-.footer {
-  background: #fff;
-  display: flex;
-  margin: 0 1rem;
-  justify-content: space-between;
-  font-size: .6rem;
-  padding: 1rem .5rem;
-  @include below(1000px) {
-    flex-direction: column;
-    align-items: center;
-    & p:first-child {
-      margin-bottom: .5rem;
-    }
-  }
-}
-
-.about {
-  width: calc(100% - 4rem - 2rem);
-  margin: 0 1rem;
-  text-align: left;
-  padding: 2rem;
-  background: #fff;
-  @include below(1000px) {
-    width: calc(100% - 2rem - 2rem);
-    padding: 2rem 1rem;
-  }
-  p {
-    color: #4c4c4c;
-    font-size: .7rem;
-    width: 100%;
-    max-width: 1100px;
-    letter-spacing: 1px;
-    margin-bottom: .25rem;
-    line-height: .8rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  strong {
-    color: #111;
-    font-weight: 700;
-  }
-}
-.services {
-  padding: 2rem;
-  svg {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .services_row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    img {
-      min-width: 150px;
-      width: 50%;
-      margin-bottom: .5rem;
-    }
-    h3 {
-      text-transform: uppercase;
-      font-size: .8rem;
-      font-weight: bold;
-      margin-bottom: .5rem;
-    }
-    p {
-      font-size: .75rem;
-      line-height: .8rem;
-      font-weight: 300;
-      min-height: calc(.625rem * 2);
-    }
-    &>div {
-      padding: 2rem;
-      margin: 1rem;
-      width: 100%;
-      min-width: 20%;
-      max-width: 150px;
-      background: #fff;
-      color: #4c4c4c;
-      transition: color 200ms;
-      &:hover {
-        color: #111;
-      }
-    }
-  }
-}
 
 .projet {
   transition: 200ms;
+  padding: 1rem;
+  margin: 1rem;
+  height: max-content;
   background: #fff;
+  color: $black;
   &:hover {
-    color: $primary;
+    color: #000;
     img {
       transform: scale(.95);
     }
@@ -365,9 +209,13 @@
       opacity: 1;
     }
   }
+  figure {
+    width: 100%;
+    border-radius: 8px;
+  }
   img {
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: 200ms;
   }
   figure {
@@ -378,202 +226,20 @@
     top: 100%;
     right: 0;
     opacity: 0;
-    color: $primary;
+    color: $blue;
     text-align: right;
     font-size: .5rem;
-    font-weight: bold;
+    font-weight: 700;
     transition: 200ms;
   }
   h1 {
     font-size: .75rem;
-    font-weight: bold;
+    font-weight: 700;
     margin: .75rem 0 .5rem;
   }
   p {
     font-size: .7rem;
     font-weight: 300;
-    color: #4c4c4c;
-  }
-}
-.scroll {
-  position: absolute;
-  bottom: -.5rem;
-  width: 50px;
-  height: 100px;
-
-  @include below(1000px) {
-    width: 30px;
-    height: 60px !important;
-    left: calc(50% - 15px);
-  }
-  svg {
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 75/150;
-  }
-  .scrollAnim {
-    position: absolute;
-    left: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: identifier 2s infinite;
-    z-index: 5;
-  }
-  @keyframes identifier {
-    from, to, 10%, 90% {
-      opacity: 0;
-    }
-    10% {
-      top: 25%;
-
-    }
-    50% {
-      opacity: 1;
-    }
-    90% {
-      top: 75%;
-    }
-  }
-}
-
-.sectionHeader, .sectionContainer {
-  width: calc(100% - 1rem);
-  @include below(1000px) {
-    margin: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.sectionHeader {
-  padding: 2rem 0 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #4c4c4c;
-  h1, a {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    @include below(1000px) {
-      margin: auto;
-    }
-  }
-  h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  a {
-    font-size: .8rem;
-    font-weight: bold;
-    svg {
-      margin-right: .5rem;
-      transition: 200ms;
-    }
-    &:hover > * {
-      color: $contrast;
-    }
-  }
-}
-.sectionContainer {
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
-  @include below(1000px) {
-    flex-direction: column;
-  }
-  .img {
-    width: 100%;    
-    margin-bottom: 1rem;
-    img {
-      width: 100%;
-      border-radius: 2px;
-      border: 1px solid #111;
-    }
-  }
-  .text {
-    width: 100%;
-    max-width: 40%;
-    margin-left: 1rem;
-    @include below(1000px) {
-      max-width: none;
-      margin: auto;
-    }
-    h2 {
-      font-size: .825rem;
-      font-weight: bold;
-      margin-bottom: .5rem;
-    }
-    h3 {
-      font-size: .75rem;
-      font-weight: bold;
-      color: #4c4c4c;
-      margin-bottom: .5rem;
-    }
-    &>p {
-      font-size: .7rem;
-      color: #4c4c4c;
-      margin-bottom: .5rem;
-      line-height: 1rem;
-    }
-  }
-  .infos {
-    background: #fff;
-    padding: .5rem 1rem;
-    color: #4c4c4c;
-    font-size: .625rem;
-    line-height: 1.5rem;
-    margin: 1rem 0;
-    @include below(1000px) {
-      width: max-content;
-      margin: 1rem auto;
-      text-align: left;
-    }
-    span {
-      display: inline-block;
-      font-weight: bold;
-      width: 5rem;
-      color: #111;
-    }
-    a {
-      display: inline-block;
-      margin-top: .5rem;
-    }
-  }
-  .button {
-    background: $primary;
-    padding: .5rem .5rem .25rem;
-    font-size: .8rem;
-    margin: 1rem;
-  }
-}
-
-.imgs {
-  width: 100%;
-}
-.flex2 {
-  position: relative;
-  width: 100%;
-  @include flex(50%);
-  &:nth-child(2n+1) {
-    margin-right: 1rem;
-  }
-}
-.flex3 {
-  width: 100%;
-  @include flex(33.33333333333%);
-  h3, h1 {
-    text-transform: uppercase;
-    font-size: .8rem;
-    font-weight: bold;
-    margin-bottom: .5rem;
-  }
-  p {
-    font-size: .75rem;
-    line-height: .8rem;
-    font-weight: 300;
-    min-height: calc(.75rem * 2);
+    color: $black;
   }
 }

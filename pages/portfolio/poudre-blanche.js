@@ -1,7 +1,7 @@
 'use strict'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../../styles/components.module.css'
+import styles from '../../styles/projets.module.css'
 import { motion } from 'framer-motion'
 
 import Layout from '../../components/Layout'
@@ -31,7 +31,7 @@ export default function Home() {
             <h3>Concept</h3>
             <p>Le concept du logo est la combinaison des lettres P et B. Logo auquel on peut appliquer une rotation de -90 deg pour que cela forme une brioche.</p>
           </div>
-          <div className={`${styles.imgs} ${styles.flex2}`} >
+          <div className={`${styles.imgs} ${styles.flex_2}`} >
           <motion.div 
               initial={{y: 400, opacity: 0}}
               animate={{y:0, opacity:1}}

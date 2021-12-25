@@ -1,16 +1,13 @@
 'use strict'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/components.module.css'
+import styles from '../../styles/projets.module.css'
 import { motion } from 'framer-motion'
 
 import Layout from '../../components/Layout'
 import SectionHeader from '../../components/SectionHeader'
 import SectionContainer from '../../components/SectionContainer'
 
-import website1 from '../../public/img/witw-website-1.webp'
-import website2 from '../../public/img/witw-website-2.webp'
-import website3 from '../../public/img/witw-website-3.webp'
+import { IoLogoGithub } from 'react-icons/io5'
 
 export default function Home() {
   return (
@@ -24,19 +21,24 @@ export default function Home() {
         <SectionContainer>
           <div className={styles.text}>
             <h3>Application web</h3>
-            <p>Création d&apos;une application web pour découvrir NextJS.</p>
+            <p>Dans ce projet vous retrouverez une application web.</p>
+            <p>Une intégration de <a rel="noreferrer noopener" href="https://restcountries.com/" target="_blank" className={styles.extern_link}>l&apos;API REST COUNTRIES</a></p>
             <div className={styles.infos}>
               <p><span>Date</span>26 oct. 2021</p>
-              <p><span>Projet</span>Perso</p>
+              <p><span>Projet</span>Personnel</p>
               <p><span>Durée</span>1 semaine</p>
-              <p><span>Technologie</span>HTML, SASS, Javascript, Next.js</p>
+              <p><span>Technologie</span>HTML, SASS, NextJS</p>
+              <p>
+                <a target="_blank" rel="noreferrer noopener" className={styles.iconcta} href="https://github.com/VanhoveHugo/winw"><IoLogoGithub /></a>
+              </p>
             </div>
-            <p>J&apos;ai mis 1 semaine pour apprendre NextJS, les Hooks React et intégrer <a rel="noreferrer noopener" href="https://restcountries.com/" target="_blank">l&apos;APi</a>.</p>
+            <p>J&apos;ai créé ce site pour m&apos;initier avec Next Js, 1 semaine est le temps que j&apos;ai pris pour prendre en main les bases du framework et réaliser le site.</p>
             <br />
             <h3>Fonctionnalités</h3>
+            <p>- Intégration API REST</p>
             <p>- Barre de recherche</p>
-            <p>- Système de filtre par continent</p>
-            <p>- Gestion du theme ( light / dark mode )</p>
+            <p>- Filtre par continent</p>
+            <p>- Gestion du thème ( light / dark mode )</p>
           </div>
           <div className={styles.imgs} >
             <motion.div 

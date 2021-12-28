@@ -12,7 +12,6 @@
     border-radius: 8px;
     @include above(700px) {
       width: calc(50% - 6rem - 2px);
-      min-width: 7.5rem !important;
     }
     @include above(1240px) {
       width: $number;

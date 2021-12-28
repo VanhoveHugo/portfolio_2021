@@ -15,9 +15,9 @@ export default function Portfolio() {
 
       <Layout path="portfolio">
         <section className={styles.headline}>
-          <h1><a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a></h1>
-          <p>Développeur Javascript (React, Next, Node, Electron)</p>
-          <p>Étudiant chez MyDigitalSchool</p>
+            <h1><a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a></h1>
+            <p>Développeur Javascript (React, Next, Node, Electron)</p>
+            <p>Étudiant chez MyDigitalSchool Paris</p>
         </section>
         <section>
           <h2>Projets</h2>

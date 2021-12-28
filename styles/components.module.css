@@ -80,7 +80,6 @@
 @media screen and (min-width: 700px) {
   .flex4 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 
@@ -125,7 +124,6 @@
 @media screen and (min-width: 700px) {
   .flex3 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 
@@ -176,7 +174,6 @@
 @media screen and (min-width: 700px) {
   .flex2 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 

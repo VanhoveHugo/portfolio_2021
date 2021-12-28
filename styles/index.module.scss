@@ -116,40 +116,22 @@
 }
 .projets {
     article {
-        position: relative;
-        width: 100%;
-        display: flex;
-        margin-top: 2rem;
-        flex-direction: column-reverse;
-        align-items: stretch;
-        @include above(1000px) {
-            width: calc(100% - 2rem);
-            flex-direction: row;
-        }
+        align-items: center;
         div {
-            flex: 0 0 50%;
-        }
-        .left {      
-            padding: 1rem; 
             background: #fff;
-            border: 1px solid rgba($black, .25);
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            @include above(1000px) {
-                margin-left: 1rem;
-            }
         }
         .right {
-            display: flex;
-            transform: translate(0, 1rem);
-            @include above(1000px) {
-                display: block;
-                transform: translate(-2rem, .5rem) !important;
-            }
+            // width: calc(50% - 2.25rem - 2px);
+            padding: .125rem !important;
+            overflow: hidden;
+            height: max-content;
         }
         header {
             flex: 1;
+            text-align: center;
+            @include above(1000px) {
+                text-align: left;
+            }
             h1 {
                 margin: 1rem;
                 font-size: 1.5rem;
@@ -157,17 +139,23 @@
             }
             p {
                 font-size: .9rem;
-                width: 80%;
+                width: 100%;
+                @include above(1000px) {
+                    width: 80%;
+                }
             }
         }
         footer {
             margin-top: 2rem;
             display: flex;
+            justify-content: center;
+            @include above(1000px) {
+                justify-content: flex-start;
+            }
         }
         figure {
-            aspect-ratio: 2.08 !important;
-            width: 80%;
-            margin: auto;
+            aspect-ratio: auto 1339 / 644;
+            width: calc(100% - 2px);
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid rgba($black, .25);

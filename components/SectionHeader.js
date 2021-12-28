@@ -11,7 +11,7 @@ export default function Layout({ title, children }) {
             <section className={styles.headline}>
                 <h1><a rel="noreferrer noopener" target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a></h1>
                 <p>Développeur Javascript (React, Next, Node, Electron)</p>
-                <p>Étudiant chez MyDigitalSchool</p>
+                <p>Étudiant chez MyDigitalSchool Paris</p>
             </section>
             <div className={styles.sectionHeader}>
                 <motion.div
@@ -21,7 +21,7 @@ export default function Layout({ title, children }) {
                     <h1>{title}</h1>
                     <Link href='/portfolio'>
                         <a>
-                            <BsFillGrid3X3GapFill /> Retour au projets
+                            <BsFillGrid3X3GapFill /> Retour aux projets
                         </a>
                     </Link>
                 </motion.div>

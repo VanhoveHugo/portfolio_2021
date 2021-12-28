@@ -157,7 +157,6 @@ table {
 @media screen and (min-width: 700px) {
   .flex4 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 
@@ -202,7 +201,6 @@ table {
 @media screen and (min-width: 700px) {
   .flex3 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 
@@ -253,7 +251,6 @@ table {
 @media screen and (min-width: 700px) {
   .flex2 > * {
     width: calc(50% - 6rem - 2px);
-    min-width: 7.5rem !important;
   }
 }
 
@@ -291,6 +288,24 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
   html {
     font-size: 22px;
   }

@@ -32,7 +32,7 @@ export default function Home() {
                 <a target="_blank" rel="noreferrer noopener" className={styles.iconcta} href="https://github.com/VanhoveHugo/winw"><IoLogoGithub /></a>
               </p>
             </div>
-            <p>J&apos;ai créé ce site pour m&apos;initier avec Next Js, 1 semaine est le temps que j&apos;ai pris pour prendre en main les bases du framework et réaliser le site.</p>
+            <p>J&apos;ai créé ce site pour m&apos;initier avec NextJS, 1 semaine est le temps que j&apos;ai mis pour prendre en main les bases du framework et réaliser le site.</p>
             <br />
             <h3>Fonctionnalités</h3>
             <p>- Intégration API REST</p>

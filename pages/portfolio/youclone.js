@@ -33,7 +33,7 @@ export default function Home() {
                 <a target="_blank" rel="noreferrer noopener" className={styles.iconcta} href="https://github.com/VanhoveHugo/youclone"><IoLogoGithub /></a>
               </p>
             </div>
-            <h3>Fonctionnalités</h3>
+            <h3>Fonctionnalité</h3>
             <p>- Intégration API REST</p>
           </div>
           <div className={styles.imgs} >

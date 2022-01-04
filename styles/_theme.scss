@@ -25,9 +25,6 @@ $fresh: #C7D0FF;
     display: flex;
     align-items: center;
     z-index: 5;
-    & svg {
-        margin-left: .5rem;
-    }
     & + .iconcta {
         margin-left: .5rem;
     }
@@ -37,7 +34,9 @@ $fresh: #C7D0FF;
     padding: .5rem;
     font-size: .7rem;
     line-height: .7rem;
-    width: max-content;
+    aspect-ratio: 1/1;
+    min-width: 10px;
+    min-height: 10px;
     color: #fff;
     font-weight: 300;
     display: flex;

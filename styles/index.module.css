@@ -18,10 +18,6 @@
   z-index: 5;
 }
 
-.cta svg {
-  margin-left: .5rem;
-}
-
 .cta + .iconcta {
   margin-left: .5rem;
 }
@@ -31,9 +27,9 @@
   padding: .5rem;
   font-size: .7rem;
   line-height: .7rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  aspect-ratio: 1/1;
+  min-width: 10px;
+  min-height: 10px;
   color: #fff;
   font-weight: 300;
   display: -webkit-box;
@@ -235,6 +231,7 @@
   margin-bottom: .25rem;
   font-weight: bold;
   z-index: 5;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1000px) {
@@ -360,21 +357,34 @@
 }
 
 .projets article {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
-.projets article div {
-  background: #fff;
+.projets article .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projets article .right {
+  width: 100%;
   padding: .125rem !important;
   overflow: hidden;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+@media screen and (min-width: 700px) {
+  .projets article .right {
+    width: calc(50% - 2.25rem - 2px);
+  }
 }
 
 .projets article header {

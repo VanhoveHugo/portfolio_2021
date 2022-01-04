@@ -25,11 +25,11 @@ export default function Index() {
     <>
       <Head>
         <title>Hugo Vanhove - Développeur JavaScript Junior</title>
-        <meta name="description" content="Portfolio de Hugo Vanhove, développeur Javascript spécialisé Next et Node avec une aspiration pour la cyber sécurité. Actuellement à la recherche d'un stage de 5 mois dans le domaine du développement web." />
+        <meta name="description" content="Portfolio de Hugo Vanhove, développeur Javascript spécialisé React et Node avec une aspiration pour la cyber sécurité. Actuellement à la recherche d'un stage de 5 mois dans le domaine du développement web." />
       </Head>
       <Layout path="index">
         <section className={styles.hero}>
-          <h1>HUGO VANHOVE</h1>
+          <h1>Hugo Vanhove</h1>
           <span>Développeur 
             <Typewriter 
               options={{
@@ -92,7 +92,7 @@ export default function Index() {
                 <p>Voici le clone de Youtube que j'ai réalisé avec NextJS</p>
               </header>
               <footer>
-                <Link href="/portfolio/where-in-the-world">
+                <Link href="/portfolio/youclone">
                   <a className={styles.cta}>Voir plus</a>
                 </Link>
                 <a target="_blank" rel="noreferrer noopener" className={styles.iconcta} href="https://github.com/VanhoveHugo/youclone"><IoLogoGithub /></a>

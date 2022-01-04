@@ -20,6 +20,7 @@
         margin-bottom: .25rem;
         font-weight: bold;
         z-index: 5;
+        text-transform: uppercase;
         @include above(1000px) {
             font-size: 2.5rem;
         }
@@ -116,15 +117,19 @@
 }
 .projets {
     article {
-        align-items: center;
-        div {
-            background: #fff;
+        align-items: stretch;
+        .left {
+            display: flex;
+            flex-direction: column;
         }
         .right {
-            // width: calc(50% - 2.25rem - 2px);
+            width: 100%;
             padding: .125rem !important;
             overflow: hidden;
             height: max-content;
+            @include above(700px) {
+                width: calc(50% - 2.25rem - 2px);
+            }
         }
         header {
             flex: 1;

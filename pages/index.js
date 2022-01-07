@@ -59,7 +59,7 @@ export default function Index() {
         </section>          */}
         <section className={styles.services}>
           <h2>Stack</h2>
-          <div className={styles.flex4}>
+          <div className={styles.flex3}>
             <div>
               <h3>Front-End</h3>
               <p>ReactJS, NextJS</p>
@@ -74,11 +74,6 @@ export default function Index() {
               <h3>Application</h3>
               <p>ElectronJS</p>
               <IoBrowsers />
-            </div>
-            <div>
-              <h3>SysAdmin</h3>
-              <p>In progress...</p>
-              <IoCloudy />
             </div>
           </div>
         </section>

@@ -39,9 +39,9 @@ export default function Layout({ path }) {
                     <Link href="/portfolio">
                         <a className={path == "portfolio" ? styles.active : ''}>Portfolio</a>
                     </Link>
-                    {/* <Link href="/portfolio">
-                        <a className={path == "lab" ? styles.active : ''}>Lab</a>
-                    </Link> */}
+                    <Link href="/contact">
+                        <a className={path == "contact" ? styles.active : ''}>Contact</a>
+                    </Link>
                 </nav>
                 <ul>
                     <li>

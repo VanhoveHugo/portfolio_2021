@@ -38,12 +38,10 @@
     border-radius: 0 8px 0 0;
     height: 8px;
   }
-
-
 }
 .main {
   width: 100%;
-  height: max-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
@@ -56,6 +54,9 @@
       margin-bottom: 1rem;
       text-align: center;
     }
+  }
+  .content {
+    flex: 1;
   }
 }
 

@@ -7,7 +7,7 @@ import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps, router}) {
-  const url = `https://http://localhost:3000${router.route}`
+  const url = `https://www.hugov.fr/${router.route}`
 
   useEffect(() => {
     console.log(
@@ -23,11 +23,14 @@ vanhovehugo1@gmail.com
     <>
       <Head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="canonical" href="https://www.hugov.fr" />
         {/* <meta http-equiv="Content-Security-Policy" content="script-src 'none'" /> */}
       </Head>
       <DefaultSeo
           openGraph={{
               type: 'website',
+              title: 'Hugo Vanhove - Développeur Fullstack Junior',
+              description: 'Portfolio de Hugo Vanhove, développeur Javascript spécialisé React et Node avec une aspiration pour la cyber sécurité.',
               locale: 'fr',
               url: url,
           }}

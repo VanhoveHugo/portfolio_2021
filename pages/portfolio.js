@@ -9,8 +9,8 @@ export default function Portfolio() {
   return (
     <>
       <Head>
-        <title>Hugo Vanhove | Portfolio</title>
-        <meta name="description" content="La page projets du portfolio de Hugo Vanhove." />
+        <title>Portfolio de Hugo Vanhove - Développeur Fullstack Junior</title>
+        <meta name="description" content="Le portfolio de Hugo Vanhove, vous pourrez voir tous les projets de ce jeune développeur." />
       </Head>
 
       <Layout path="portfolio">

@@ -9,7 +9,9 @@ export default function Layout({ children, path }) {
       <Header path={path} />
       <motion.main 
         className={styles.main}>
-        {children}
+        <div className={styles.content}>
+          {children}
+        </div>
         <footer className={styles.footer}>
           <p>© 2021 <a rel="noreferrer noopener" className={styles.extern_link} target="_blank" href="https://www.linkedin.com/in/hugo-code/">Hugo Vanhove</a>, Tous droits réservés.</p>
         </footer>

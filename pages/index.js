@@ -24,8 +24,8 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Hugo Vanhove - Développeur JavaScript Junior</title>
-        <meta name="description" content="Portfolio de Hugo Vanhove, développeur Javascript spécialisé React et Node avec une aspiration pour la cyber sécurité. Actuellement à la recherche d'un stage de 5 mois dans le domaine du développement web." />
+        <title>Hugo Vanhove - Développeur Fullstack Junior</title>
+        <meta name="description" content="Portfolio de Hugo Vanhove, développeur Javascript spécialisé React et Node avec une aspiration pour la cyber sécurité." />
       </Head>
       <Layout path="index">
         <section className={styles.hero}>
@@ -37,6 +37,7 @@ export default function Index() {
                 loop: true,
                 delay: 100,
                 strings: [
+                  'Passionné ❤️',
                   'Node',
                   'React',
                   'Next',
@@ -83,7 +84,7 @@ export default function Index() {
           <article className={styles.flex2}>
             <div className={styles.left}>
               <header>
-                <h1>Youclone</h1>
+                <h3>Youclone</h3>
                 <p>Voici le clone de Youtube que j'ai réalisé avec NextJS</p>
               </header>
               <footer>
@@ -102,7 +103,7 @@ export default function Index() {
         </section>
 
         <section className={styles.process}>
-          <h2>Procéder</h2>
+          <h2>Pourquoi moi ?</h2>
           <div className={styles.flex3}>
             <div>
               <h3>Projets web</h3>

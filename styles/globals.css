@@ -99,6 +99,10 @@ table {
   margin-left: .5rem;
 }
 
+.cta svg {
+  margin-left: .5rem;
+}
+
 .iconcta {
   background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
   padding: .5rem;

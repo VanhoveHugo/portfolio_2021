@@ -7,7 +7,7 @@ import '../styles/globals.css'
 import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps, router}) {
-  const url = `https://www.hugov.fr/${router.route}`
+  const url = `https://www.hugov.fr${router.route}`
 
   useEffect(() => {
     console.log(

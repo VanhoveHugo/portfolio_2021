@@ -62,14 +62,15 @@
 }
 
 .about {
-    background: #fff;
     border-radius: 8px;
     padding: 1rem;
+    margin: 1rem;
     border: 1px solid rgba($black, .25);
     p {
         font-size: .875rem;
         letter-spacing: .025rem;
         line-height: 1.2rem;
+        text-align: justify;
     }
 }
 

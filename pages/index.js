@@ -16,7 +16,6 @@ import {
   IoCloudUploadOutline,
   IoBrush,
   IoConstruct,
-  IoCloudy,
   IoBrowsers,
   IoLogoGithub } from 'react-icons/io5'
 
@@ -46,18 +45,8 @@ export default function Index() {
               }}
             />
           </span>
-          <a className={styles.cta} href='/CV_vanhove.pdf' download>Curriculum Vitae <IoCloudUploadOutline /></a>
-        </section>
-        {/* <section className={styles.about}>
-          <h2>Présentation</h2>
-          <div>
-            <p>Actuellement étudiant à <a rel='noreferrer noopener' className={styles.extern_link} href="https://www.mydigitalschool.com/" target='_blank' >MyDigitalSchool</a> Paris, je suis passioné par le développement informatique.
-            </p>
-            <p>Je suis un <strong>Développeur FullStack</strong> Javascript Junior.</p>
-            <p>J&apos;apprends tous les jours de bonnes pratiques ou de nouvelles methodes pour mieux coder.</p>
-            <p>Je maitrise les languages de programmations: <strong>HTML, CSS, BASH, GIT, SQL, Python, Javascript, NodeJS, NextJS et ReactJS.</strong></p>
-          </div>
-        </section>          */}
+          <a className={styles.cta} href='/CV_vanhove.pdf' download>Télécharger mon cv <IoCloudUploadOutline /></a>
+        </section>        
         <section className={styles.services}>
           <h2>Stack</h2>
           <div className={styles.flex3}>
@@ -78,7 +67,6 @@ export default function Index() {
             </div>
           </div>
         </section>
-
         <section className={styles.projets}>
           <h2>Dernier projet</h2>
           <article className={styles.flex2}>

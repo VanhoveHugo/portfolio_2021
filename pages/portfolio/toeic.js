@@ -34,7 +34,7 @@ export default function Home() {
               animate={{y:0, opacity:1}}
               transition={{duration: .25,delay: .2}}
               className={styles.img} >
-              <img src="/img/toeic-mailing.webp" alt="Une image du mailing que j'ai réalisé pendant ma formation MyDigialSchool" />
+              <img src="/img/toeic-mailing.webp" alt="Une image du mailing que j'ai réalisé durant ma formation MyDigialSchool" />
             </motion.div>
           </div>
         </SectionContainer>

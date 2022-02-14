@@ -29,12 +29,6 @@ export default function Portfolio() {
               delay=".1"
               img="/img/youclone.webp" />
             <Section 
-              title="Where In The World ?" 
-              desc="Intégration d'une API Rest" 
-              path="where-in-the-world" 
-              delay=".2"
-              img="/img/witw.webp" />
-            <Section 
               title="Polygon" 
               desc="Forum pour un jeu" 
               path="polygon" 

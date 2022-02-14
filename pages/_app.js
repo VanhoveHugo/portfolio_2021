@@ -24,7 +24,7 @@ vanhovehugo1@gmail.com
       <Head>
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="canonical" href="https://www.hugov.fr" />
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self'; img-src https://hugov.fr/*;" />
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
       </Head>
       <DefaultSeo
           openGraph={{

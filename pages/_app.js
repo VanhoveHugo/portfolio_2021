@@ -24,7 +24,9 @@ vanhovehugo1@gmail.com
       <Head>
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="canonical" href="https://www.hugov.fr" />
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+        <meta httpEquiv="Content-Security-Policy" content="script-src 'self'" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98144CC1B3"></script>
+        <script src="/js/google.js"></script>
       </Head>
       <DefaultSeo
           openGraph={{
